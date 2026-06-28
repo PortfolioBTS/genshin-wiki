@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Genshin Wiki — Энциклопедия Тейвата</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .hero {
+      padding: 84px 36px 60px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse 80% 55% at 50% 0%, #1a2d6638, transparent 65%), radial-gradient(ellipse 40% 30% at 85% 85%, #8b5cf618, transparent 60%);
+      pointer-events: none;
+    }
+
+    .hero-eyebrow {
+      font-size: .7rem;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 14px;
+      position: relative;
+    }
+
+    .hero h1 {
+      font-family: 'Cinzel', serif;
+      font-size: clamp(2.2rem, 5.5vw, 4rem);
+      font-weight: 700;
+      line-height: 1.12;
+      margin-bottom: 18px;
+      background: linear-gradient(135deg, #e8eaf6 25%, #8b5cf6 60%, #4f7af8 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      position: relative;
+    }
+
+    .hero-sub {
+      color: var(--text-sub);
+      font-size: 1rem;
+      max-width: 540px;
+      margin: 0 auto 40px;
+      line-height: 1.75;
+      position: relative;
+    }
+
+    .hero-stats {
+      display: flex;
+      justify-content: center;
+      gap: 48px;
+      margin-bottom: 58px;
+      flex-wrap: wrap;
+      position: relative;
+    }
+
+    .hero-stat span {
+      display: block;
+      font-family: 'Cinzel', serif;
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--accent);
+    }
+
+    .hero-stat small {
+      font-size: .7rem;
+      color: var(--text-sub);
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      display: block;
+      margin-top: 2px;
+    }
+
+    .news-banner {
+      background: linear-gradient(135deg, #0d1a33e0, #130d28e0);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 16px 22px;
+      margin: 0 36px 36px;
+      max-width: calc(1440px - 72px);
+      margin-left: auto;
+      margin-right: auto;
+      display: flex;
+      align-items: center;
+      gap: 13px;
+      flex-wrap: wrap;
+    }
+
+    .news-badge {
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      color: #fff;
+      font-size: .66rem;
+      font-weight: 700;
+      padding: 4px 10px;
+      border-radius: 20px;
+      letter-spacing: 1px;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+
+    .news-banner p {
+      font-size: .86rem;
+      color: var(--text-sub);
+      line-height: 1.5;
+    }
+
+    .news-banner strong {
+      color: var(--text-main);
+    }
+
+    .sections-title {
+      font-family: 'Cinzel', serif;
+      font-size: 1rem;
+      color: var(--text-sub);
+      text-align: center;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      margin-bottom: 22px;
+    }
+
+    .sections-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(268px, 1fr));
+      gap: 16px;
+      padding: 0 36px 68px;
+      max-width: 1440px;
+      margin: 0 auto;
+    }
+
+    .section-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 26px 22px;
+      cursor: pointer;
+      transition: all .25s;
+      position: relative;
+      overflow: hidden;
+      text-decoration: none;
+      display: block;
+      color: inherit;
+    }
+
+    .section-card::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: linear-gradient(90deg, var(--accent), var(--accent2));
+      opacity: 0;
+      transition: opacity .25s;
+    }
+
+    .section-card:hover {
+      border-color: rgba(79, 122, 248, .5);
+      transform: translateY(-3px);
+      box-shadow: 0 10px 28px rgba(0, 0, 0, .4);
+    }
+
+    .section-card:hover::after {
+      opacity: 1;
+    }
+
+    .section-card .card-icon {
+      font-size: 1.85rem;
+      margin-bottom: 13px;
+    }
+
+    .section-card h3 {
+      font-family: 'Cinzel', serif;
+      font-size: .93rem;
+      font-weight: 600;
+      margin-bottom: 7px;
+      color: var(--text-main);
+    }
+
+    .section-card p {
+      font-size: .8rem;
+      color: var(--text-sub);
+      line-height: 1.65;
+    }
+
+    .about-section {
+      padding: 0 36px 64px;
+      max-width: 1440px;
+      margin: 0 auto;
+    }
+
+    .about-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 28px 30px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 28px;
+    }
+
+    .about-card h2 {
+      font-family: 'Cinzel', serif;
+      font-size: 1.3rem;
+      margin-bottom: 10px;
+      color: var(--text-main);
+    }
+
+    .about-card p {
+      font-size: .82rem;
+      color: var(--text-sub);
+      line-height: 1.75;
+    }
+
+    .about-divider {
+      width: 1px;
+      background: var(--border);
+      margin: 0;
+    }
+
+    .elem-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 12px;
+    }
+
+    .elem-chip {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      padding: 5px 12px;
+      border-radius: 20px;
+      border: 1px solid var(--border);
+      background: var(--bg-panel);
+      font-size: .75rem;
+      color: var(--text-sub);
+      cursor: pointer;
+      transition: all .2s;
+      text-decoration: none;
+    }
+
+    .elem-chip:hover {
+      border-color: var(--accent);
+      color: var(--text-main);
+      transform: translateY(-1px);
+    }
+
+    @media(max-width:760px) {
+      .about-card {
+        grid-template-columns: 1fr;
+      }
+
+      .about-divider {
+        display: none;
+      }
+
+      .hero,
+      .news-banner,
+      .sections-grid,
+      .about-section {
+        padding-left: 16px;
+        padding-right: 16px;
+      }
+
+      .news-banner {
+        margin: 0 16px 24px;
+      }
+
+      .hero-stats {
+        gap: 26px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <a class="logo" href="index.html"><span class="logo-star">✦</span> Genshin Wiki</a>
+    <nav>
+      <a href="index.html" class="active">Главная</a>
+      <a href="characters.html">Персонажи</a>
+      <a href="weapons.html">Оружие</a>
+      <a href="artifacts.html">Артефакты</a>
+      <a href="regions.html">Регионы</a>
+      <a href="guides.html">Гайды</a>
+      <a href="patches.html">Патчноуты</a>
+      <a href="banners.html">Баннеры</a>
+    </nav>
+    <a class="btn-reg" href="auth.html" id="auth-btn">Войти / Регистрация</a>
+  </header>
+
+  <main>
+    <div class="hero">
+      <div class="hero-eyebrow">Добро пожаловать в Тейват</div>
+      <h1>Genshin Wiki</h1>
+      <p class="hero-sub">Полная энциклопедия по Genshin Impact — персонажи, оружие, артефакты, регионы, гайды и
+        актуальные события.</p>
+      <div class="hero-stats">
+        <div class="hero-stat"><span>101</span><small>Персонаж</small></div>
+        <div class="hero-stat"><span>7</span><small>Элементов</small></div>
+        <div class="hero-stat"><span>7</span><small>Регионов</small></div>
+        <div class="hero-stat"><span>50+</span><small>Артефактов</small></div>
+      </div>
+    </div>
+
+    <div class="news-banner">
+      <span class="news-badge">ВЕРСИЯ 5.7</span>
+      <p>Добавлены персонажи <strong>Скирк (Крио / Меч)</strong> и <strong>Далия (Гидро / Меч)</strong>. Число
+        играбельных героев достигло <strong>101</strong>. Новый регион в Натлане — Высота Ойпаро.</p>
+    </div>
+
+    <p class="sections-title">Разделы энциклопедии</p>
+    <div class="sections-grid">
+      <a class="section-card" href="characters.html">
+        <div class="card-icon">⚔️</div>
+        <h3>Персонажи</h3>
+        <p>Все 101 герой Тейвата с карточками, фильтрами по элементу, таблицами характеристик и лором.</p>
+      </a>
+      <a class="section-card" href="weapons.html">
+        <div class="card-icon">🗡️</div>
+        <h3>Оружие</h3>
+        <p>Полная база мечей, луков, копий, двуручников и каталистов с пассивными способностями.</p>
+      </a>
+      <a class="section-card" href="artifacts.html">
+        <div class="card-icon">💎</div>
+        <h3>Артефакты</h3>
+        <p>Все сеты с бонусами за 2 и 4 предмета — рекомендации для DPS, саппортов и хилеров.</p>
+      </a>
+      <a class="section-card" href="regions.html">
+        <div class="card-icon">🗺️</div>
+        <h3>Регионы</h3>
+        <p>Все семь наций Тейвата — стихия, архонт, особенности и вдохновение каждой нации.</p>
+      </a>
+      <a class="section-card" href="guides.html">
+        <div class="card-icon">📖</div>
+        <h3>Гайды</h3>
+        <p>Руководства от первых шагов до прохождения 12 этажа Спирального Утёса на 36 звёзд.</p>
+      </a>
+      <a class="section-card" href="patches.html">
+        <div class="card-icon">📜</div>
+        <h3>Патчноуты</h3>
+        <p>История всех обновлений — новые персонажи, баланс, события и исправления.</p>
+      </a>
+      <a class="section-card" href="banners.html">
+        <div class="card-icon">🌟</div>
+        <h3>Баннеры и события</h3>
+        <p>Актуальные и предстоящие баннеры персонажей и оружия, система питти, текущие события.</p>
+      </a>
+      <a class="section-card" href="auth.html">
+        <div class="card-icon">👤</div>
+        <h3>Аккаунт</h3>
+        <p>Зарегистрируйтесь, чтобы предлагать правки и дополнения вики. Помогите сообществу!</p>
+      </a>
+    </div>
+
+    <div class="about-section">
+      <div class="about-card">
+        <div>
+          <h2>О Genshin Wiki</h2>
+          <p>Genshin Wiki — неофициальная фан-энциклопедия по игре Genshin Impact от студии HoYoverse. Здесь собрана
+            актуальная информация о всех аспектах игры: персонажах, оружии, артефактах, регионах и обновлениях.</p>
+          <br>
+          <p>Сайт создан сообществом для сообщества. Зарегистрированные пользователи могут предлагать правки и
+            дополнения через форму на каждой странице. Все материалы основаны на открытых данных.</p>
+          <br>
+          <p style="font-size:.75rem;color:var(--text-dim);">Genshin Impact © HoYoverse / miHoYo. Genshin Wiki не
+            является официальным ресурсом и не аффилирован с HoYoverse.</p>
+        </div>
+        <div class="about-divider"></div>
+        <div>
+          <h2>Стихии Тейвата</h2>
+          <p>В мире Тейвата существует 7 стихий — каждый персонаж владеет одной из них. Нажми на стихию, чтобы увидеть
+            всех связанных персонажей.</p>
+          <div class="elem-list">
+            <a class="elem-chip" href="characters.html?el=pyro">🔥 Пиро</a>
+            <a class="elem-chip" href="characters.html?el=hydro">💧 Гидро</a>
+            <a class="elem-chip" href="characters.html?el=anemo">🌬️ Анемо</a>
+            <a class="elem-chip" href="characters.html?el=electro">⚡ Электро</a>
+            <a class="elem-chip" href="characters.html?el=cryo">❄️ Крио</a>
+            <a class="elem-chip" href="characters.html?el=geo">⛰️ Гео</a>
+            <a class="elem-chip" href="characters.html?el=dendro">🌿 Дендро</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="logo" href="index.html"><span class="logo-star">✦</span>&nbsp;Genshin Wiki</a>
+        <p style="margin-top:9px;">Неофициальная энциклопедия по Genshin Impact.<br>Не аффилирован с HoYoverse. ©
+          HoYoverse / miHoYo.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Разделы</h5>
+        <a href="characters.html">Персонажи</a><a href="weapons.html">Оружие</a><a href="artifacts.html">Артефакты</a>
+      </div>
+      <div class="footer-col">
+        <h5>Мир</h5>
+        <a href="regions.html">Регионы</a><a href="guides.html">Гайды</a><a href="patches.html">Патчноуты</a>
+      </div>
+      <div class="footer-col">
+        <h5>Аккаунт</h5>
+        <a href="auth.html">Войти</a><a href="auth.html">Регистрация</a><a href="banners.html">Баннеры</a>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2025 Genshin Wiki — Fan Project &nbsp;|&nbsp; Genshin Impact © HoYoverse</div>
+  </footer>
+
+  <script src="data.js"></script>
+  <script>
+    const u = getUser();
+    if (u) { const b = document.getElementById('auth-btn'); b.textContent = '👤 ' + u.name; b.href = 'auth.html'; }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Баннеры и события — Genshin Wiki</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .pity-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 26px 28px;
+      margin-bottom: 30px;
+    }
+
+    .pity-card h3 {
+      font-family: 'Cinzel', serif;
+      font-size: 1rem;
+      color: var(--text-main);
+      margin-bottom: 18px;
+    }
+
+    .pity-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 12px;
+    }
+
+    .pity-item {
+      background: var(--bg-panel);
+      border-radius: 10px;
+      padding: 14px 16px;
+      border: 1px solid var(--border);
+    }
+
+    .pity-item .p-label {
+      font-size: .68rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--text-dim);
+      margin-bottom: 5px;
+    }
+
+    .pity-item .p-val {
+      font-family: 'Cinzel', serif;
+      font-size: 1.55rem;
+      font-weight: 700;
+      color: var(--accent);
+      line-height: 1;
+    }
+
+    .pity-item .p-sub {
+      font-size: .71rem;
+      color: var(--text-sub);
+      margin-top: 4px;
+      line-height: 1.4;
+    }
+
+    .events-title {
+      font-family: 'Cinzel', serif;
+      font-size: 1.05rem;
+      color: var(--text-main);
+      margin-bottom: 16px;
+    }
+
+    .event-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 16px 20px;
+      margin-bottom: 11px;
+      display: flex;
+      gap: 14px;
+      align-items: center;
+      transition: border-color .2s;
+    }
+
+    .event-card:hover {
+      border-color: rgba(79, 122, 248, .4);
+    }
+
+    .event-icon {
+      font-size: 1.8rem;
+      flex-shrink: 0;
+    }
+
+    .event-body {
+      flex: 1;
+    }
+
+    .event-body h4 {
+      font-size: .9rem;
+      font-weight: 600;
+      margin-bottom: 3px;
+    }
+
+    .event-body p {
+      font-size: .77rem;
+      color: var(--text-sub);
+      line-height: 1.5;
+    }
+
+    .event-date {
+      font-size: .7rem;
+      color: var(--text-dim);
+      white-space: nowrap;
+      flex-shrink: 0;
+      text-align: right;
+    }
+
+    .event-reward {
+      font-size: .7rem;
+      color: var(--gold);
+      margin-top: 2px;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <a class="logo" href="index.html"><span class="logo-star">✦</span> Genshin Wiki</a>
+    <nav>
+      <a href="index.html">Главная</a>
+      <a href="characters.html">Персонажи</a>
+      <a href="weapons.html">Оружие</a>
+      <a href="artifacts.html">Артефакты</a>
+      <a href="regions.html">Регионы</a>
+      <a href="guides.html">Гайды</a>
+      <a href="patches.html">Патчноуты</a>
+      <a href="banners.html" class="active">Баннеры</a>
+    </nav>
+    <a class="btn-reg" href="auth.html" id="auth-btn">Войти / Регистрация</a>
+  </header>
+
+  <main>
+    <div class="page-hero">
+      <h1>🌟 Баннеры и события</h1>
+      <p>Актуальные молитвы персонажей, оружия — система питти и расписание событий версии 5.7</p>
+    </div>
+
+    <div class="cards-container">
+
+      <!-- BANNERS -->
+      <div class="table-section-title" style="margin-top:0">Текущие баннеры</div>
+      <div class="banners-grid" id="banners-grid"></div>
+
+      <!-- PITY INFO -->
+      <div class="table-section-title">📊 Система гарантии (Питти)</div>
+      <div class="pity-card">
+        <div class="pity-grid">
+          <div class="pity-item">
+            <div class="p-label">Мягкое питти</div>
+            <div class="p-val">74</div>
+            <div class="p-sub">С 74-го желания вероятность 5★ начинает расти с каждым броском</div>
+          </div>
+          <div class="pity-item">
+            <div class="p-label">Жёсткое питти</div>
+            <div class="p-val">90</div>
+            <div class="p-sub">На 90-м желании — гарантированный 5★ предмет без исключений</div>
+          </div>
+          <div class="pity-item">
+            <div class="p-label">Базовый шанс 5★</div>
+            <div class="p-val">0.6%</div>
+            <div class="p-sub">Стартовая вероятность на каждое желание до мягкого питти</div>
+          </div>
+          <div class="pity-item">
+            <div class="p-label">Система 50/50</div>
+            <div class="p-val">50%</div>
+            <div class="p-sub">Первый 5★ на лимите: 50% — персонаж баннера, 50% — стандартный</div>
+          </div>
+          <div class="pity-item">
+            <div class="p-label">Гарантия «Победы»</div>
+            <div class="p-val">2-й</div>
+            <div class="p-sub">Второй 5★ на лимитном баннере — всегда персонаж этого баннера</div>
+          </div>
+          <div class="pity-item">
+            <div class="p-label">4★ гарантия</div>
+            <div class="p-val">10</div>
+            <div class="p-sub">Каждые 10 желаний — минимум один предмет 4★ или выше</div>
+          </div>
+          <div class="pity-item">
+            <div class="p-label">Стоимость 1 желания</div>
+            <div class="p-val">160</div>
+            <div class="p-sub">Примогемов, или 1 Переплетённая / Лазурная судьба</div>
+          </div>
+          <div class="pity-item">
+            <div class="p-label">Питти сохраняется</div>
+            <div class="p-val">✓</div>
+            <div class="p-sub">Накопленные желания переносятся на следующую версию одного типа баннера</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- EVENTS -->
+      <div class="events-title">🎉 Текущие события версии 5.7</div>
+      <div id="events-list"></div>
+
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="logo" href="index.html"><span class="logo-star">✦</span>&nbsp;Genshin Wiki</a>
+        <p style="margin-top:9px;">Неофициальная энциклопедия. © HoYoverse / miHoYo.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Разделы</h5>
+        <a href="characters.html">Персонажи</a><a href="weapons.html">Оружие</a><a href="artifacts.html">Артефакты</a>
+      </div>
+      <div class="footer-col">
+        <h5>Мир</h5>
+        <a href="regions.html">Регионы</a><a href="guides.html">Гайды</a><a href="patches.html">Патчноуты</a>
+      </div>
+      <div class="footer-col">
+        <h5>Аккаунт</h5>
+        <a href="auth.html">Войти</a><a href="auth.html">Регистрация</a><a href="banners.html">Баннеры</a>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2025 Genshin Wiki — Fan Project &nbsp;|&nbsp; Genshin Impact © HoYoverse</div>
+  </footer>
+
+  <script src="data.js"></script>
+  <script>
+    document.getElementById('banners-grid').innerHTML = BANNERS.map(b => `
+  <div class="banner-card">
+    <div class="banner-top">
+      <span class="banner-emoji">${b.emoji}</span>
+      <div><h4>${b.name}</h4><div class="b-type">${b.type}</div></div>
+    </div>
+    <div class="banner-body">
+      <div class="banner-chars">
+        ${b.five.map(c => `<span class="banner-char-tag five">⭐ ${c}</span>`).join('')}
+        ${b.four.map(c => `<span class="banner-char-tag">★ ${c}</span>`).join('')}
+      </div>
+      <div class="banner-dates">🗓 ${b.dates}</div>
+    </div>
+  </div>`).join('');
+
+    const EVENTS = [
+      { icon: '🔥', title: 'Пламя Испытания', desc: 'Сражайтесь в испытаниях Натлана и получите ограниченные косметические предметы.', date: '01.05 — 21.05', reward: 'До 800 Примогемов' },
+      { icon: '🎵', title: 'Мелодия Фонтена', desc: 'Музыкальный ивент в Фонтене — собери инструменты и сыграй уникальные партитуры.', date: '05.05 — 20.05', reward: 'Косметика + Примогемы' },
+      { icon: '🌿', title: 'Цветение Сумеру', desc: 'Обследуй джунгли Сумеру, собери Дендро-цветы для фестивального обмена.', date: '10.05 — 25.05', reward: '4★ персонаж на выбор' },
+      { icon: '⚡', title: 'Испытание Бездны', desc: 'Обновление Спирального Утёса — новые враги, новые баффы сезона.', date: '01.05 — 15.06', reward: 'До 1200 Примогемов' },
+      { icon: '🎁', title: 'Вход каждый день', desc: 'Получайте ежедневные награды за вход в течение всей версии 5.7.', date: '01.05 — 11.06', reward: '10 Примогемов за вход' },
+    ];
+
+    document.getElementById('events-list').innerHTML = EVENTS.map(e => `
+  <div class="event-card">
+    <div class="event-icon">${e.icon}</div>
+    <div class="event-body">
+      <h4>${e.title}</h4>
+      <p>${e.desc}</p>
+    </div>
+    <div class="event-date">
+      <div>${e.date}</div>
+      <div class="event-reward">🏆 ${e.reward}</div>
+    </div>
+  </div>`).join('');
+
+    const u = getUser();
+    if (u) { document.getElementById('auth-btn').textContent = '👤 ' + u.name; }
+  </script>
+</body>
+
+</html>

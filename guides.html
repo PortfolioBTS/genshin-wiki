@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Гайды — Genshin Wiki</title>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script src="emailjs-config.js"></script>
+</head>
+<body>
+<header>
+  <a class="logo" href="index.html"><span class="logo-star">✦</span> Genshin Wiki</a>
+  <nav>
+    <a href="index.html">Главная</a>
+    <a href="characters.html">Персонажи</a>
+    <a href="weapons.html">Оружие</a>
+    <a href="artifacts.html">Артефакты</a>
+    <a href="regions.html">Регионы</a>
+    <a href="guides.html" class="active">Гайды</a>
+    <a href="patches.html">Патчноуты</a>
+    <a href="banners.html">Баннеры</a>
+  </nav>
+  <a class="btn-reg" href="auth.html" id="auth-btn">Войти / Регистрация</a>
+</header>
+
+<main>
+  <div class="page-hero">
+    <h1>📖 Гайды</h1>
+    <p>От первых шагов до мастерства — руководства для всех уровней опыта</p>
+  </div>
+
+  <div class="filter-bar">
+    <span class="filter-label">Категория:</span>
+    <button class="filter-btn active" onclick="setTag('all',this)">Все</button>
+    <button class="filter-btn" onclick="setTag('Новичок',this)">🌱 Новичок</button>
+    <button class="filter-btn" onclick="setTag('Механики',this)">⚙️ Механики</button>
+    <button class="filter-btn" onclick="setTag('Прокачка',this)">📈 Прокачка</button>
+    <button class="filter-btn" onclick="setTag('Контент',this)">⚔️ Контент</button>
+    <button class="filter-btn" onclick="setTag('Ресурсы',this)">💎 Ресурсы</button>
+    <button class="filter-btn" onclick="setTag('Прогресс',this)">🏆 Прогресс</button>
+  </div>
+
+  <div class="cards-container">
+    <div class="guides-list" id="guides-list"></div>
+  </div>
+
+  <div class="submit-panel" id="submit-wrap"></div>
+</main>
+
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a class="logo" href="index.html"><span class="logo-star">✦</span>&nbsp;Genshin Wiki</a>
+      <p style="margin-top:9px;">Неофициальная энциклопедия. © HoYoverse / miHoYo.</p>
+    </div>
+    <div class="footer-col"><h5>Разделы</h5>
+      <a href="characters.html">Персонажи</a><a href="weapons.html">Оружие</a><a href="artifacts.html">Артефакты</a>
+    </div>
+    <div class="footer-col"><h5>Мир</h5>
+      <a href="regions.html">Регионы</a><a href="guides.html">Гайды</a><a href="patches.html">Патчноуты</a>
+    </div>
+    <div class="footer-col"><h5>Аккаунт</h5>
+      <a href="auth.html">Войти</a><a href="auth.html">Регистрация</a><a href="banners.html">Баннеры</a>
+    </div>
+  </div>
+  <div class="footer-bottom">© 2025 Genshin Wiki — Fan Project &nbsp;|&nbsp; Genshin Impact © HoYoverse</div>
+</footer>
+
+<div class="toast" id="toast"></div>
+<script src="data.js"></script>
+<script>
+let curTag = 'all';
+
+function render(list) {
+  const g = document.getElementById('guides-list');
+  if (!list.length) { g.innerHTML = '<div class="empty-state"><div class="es-icon">🔍</div><div class="es-text">Нет гайдов в этой категории</div></div>'; return; }
+  g.innerHTML = list.map((gd, i) => `
+    <div class="guide-card">
+      <div class="guide-num">${String(i+1).padStart(2,'0')}</div>
+      <div style="flex:1">
+        <h4>${gd.title}</h4>
+        <p>${gd.desc}</p>
+      </div>
+      <span class="guide-tag">${gd.tag}</span>
+    </div>`).join('');
+}
+
+function setTag(tag, btn) {
+  curTag = tag;
+  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  render(tag === 'all' ? GUIDES : GUIDES.filter(g => g.tag === tag));
+}
+
+function buildSubmit() {
+  const u = getUser();
+  const wrap = document.getElementById('submit-wrap');
+  if (u) {
+    wrap.innerHTML = `
+      <h3>Предложить гайд или дополнение</h3>
+      <p>Вы вошли как <strong style="color:var(--accent)">${u.name}</strong>. Поделитесь своим опытом с сообществом!</p>
+      <div class="submit-form">
+        <select id="s-cat">
+          <option value="">— Тип предложения —</option>
+          <option>Новый гайд</option>
+          <option>Дополнение к существующему гайду</option>
+          <option>Ошибка или устаревшая информация</option>
+          <option>Другое</option>
+        </select>
+        <input type="text" id="s-title" placeholder="Название гайда / раздела">
+        <textarea id="s-text" placeholder="Содержание или подробное описание..."></textarea>
+        <button class="btn-submit" onclick="sendSubmit()">📤 Отправить предложение</button>
+      </div>`;
+  } else {
+    wrap.innerHTML = `
+      <h3>Предложить гайд или дополнение</h3>
+      <p>Знаете что-то полезное? Войдите в аккаунт и поделитесь опытом с сообществом.</p>
+      <div class="sp-login-note">🔒 Требуется аккаунт&nbsp; <a href="auth.html">Войти или зарегистрироваться →</a></div>`;
+  }
+}
+
+function sendSubmit() {
+  const cat  = document.getElementById('s-cat').value;
+  const item = (document.getElementById('s-title')?.value || '').trim();
+  const text = document.getElementById('s-text').value.trim();
+  if (!cat)  { showToast('Выберите категорию', true); return; }
+  if (!text) { showToast('Введите описание предложения', true); return; }
+
+  const u = getUser();
+  const all = JSON.parse(localStorage.getItem('gw_proposals') || '[]');
+  all.push({ user: u.email, cat, item, text, date: new Date().toISOString(), page: 'Гайды' });
+  localStorage.setItem('gw_proposals', JSON.stringify(all));
+
+  ['s-cat','s-title','s-text'].forEach(id => { const el=document.getElementById(id); if(el) el.value=''; });
+
+  const btn = document.querySelector('.btn-submit');
+  if(btn) { btn.disabled=true; btn.textContent='Отправка...'; }
+
+  emailjs.init(EMAILJS_CONFIG.PUBLIC_KEY);
+  sendProposalEmail({
+    user_name:  u.name,
+    user_email: u.email,
+    page:       'Гайды',
+    category:   cat,
+    item:       item || '—',
+    message:    text,
+  }).then(sent => {
+    if(btn) { btn.disabled=false; btn.textContent='📤 Отправить предложение'; }
+    showToast(sent
+      ? '✓ Предложение отправлено и передано администратору!'
+      : '✓ Предложение сохранено (email не настроен — работает в демо-режиме)');
+  });
+}
+
+const u = getUser();
+if (u) { document.getElementById('auth-btn').textContent = '👤 ' + u.name; }
+render(GUIDES);
+buildSubmit();
+</script>
+</body>
+</html>
