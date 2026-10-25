@@ -3,7 +3,17 @@ import { defineConfig } from 'vite';
 import { partialsPlugin } from './build/partials-plugin.js';
 
 // Страницы, уже перенесённые на Vite. Каждая задача переноса дописывает свою.
-const PAGES = ['index', 'characters', 'character', 'weapons', 'artifacts'];
+const PAGES = [
+  'index',
+  'characters',
+  'character',
+  'weapons',
+  'artifacts',
+  'regions',
+  'guides',
+  'patches',
+  'banners',
+];
 
 export default defineConfig({
   base: './',

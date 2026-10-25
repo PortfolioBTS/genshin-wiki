@@ -1,123 +1,28 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Баннеры и события — Genshin Wiki</title>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="banners.css">
-</head>
-
-<body>
-  <header>
-    <a class="logo" href="index.html"><span class="logo-star">✦</span> Genshin Wiki</a>
-    <nav>
-      <a href="index.html">Главная</a>
-      <a href="characters.html">Персонажи</a>
-      <a href="weapons.html">Оружие</a>
-      <a href="artifacts.html">Артефакты</a>
-      <a href="regions.html">Регионы</a>
-      <a href="guides.html">Гайды</a>
-      <a href="patches.html">Патчноуты</a>
-      <a href="banners.html" class="active">Баннеры</a>
-    </nav>
-    <a class="btn-reg" href="auth.html" id="auth-btn">Войти / Регистрация</a>
-  </header>
-
-  <main>
-    <div class="page-hero">
-      <h1>🌟 Баннеры и события</h1>
-      <p>Актуальные молитвы персонажей, оружия — система питти и расписание событий версии 5.7</p>
-    </div>
-
-    <div class="cards-container">
-
-      <!-- BANNERS -->
-      <div class="table-section-title" style="margin-top:0">Текущие баннеры</div>
-      <div class="banners-grid" id="banners-grid"></div>
-
-      <!-- PITY INFO -->
-      <div class="table-section-title">📊 Система гарантии (Питти)</div>
-      <div class="pity-card">
-        <div class="pity-grid">
-          <div class="pity-item">
-            <div class="p-label">Мягкое питти</div>
-            <div class="p-val">74</div>
-            <div class="p-sub">С 74-го желания вероятность 5★ начинает расти с каждым броском</div>
-          </div>
-          <div class="pity-item">
-            <div class="p-label">Жёсткое питти</div>
-            <div class="p-val">90</div>
-            <div class="p-sub">На 90-м желании — гарантированный 5★ предмет без исключений</div>
-          </div>
-          <div class="pity-item">
-            <div class="p-label">Базовый шанс 5★</div>
-            <div class="p-val">0.6%</div>
-            <div class="p-sub">Стартовая вероятность на каждое желание до мягкого питти</div>
-          </div>
-          <div class="pity-item">
-            <div class="p-label">Система 50/50</div>
-            <div class="p-val">50%</div>
-            <div class="p-sub">Первый 5★ на лимите: 50% — персонаж баннера, 50% — стандартный</div>
-          </div>
-          <div class="pity-item">
-            <div class="p-label">Гарантия «Победы»</div>
-            <div class="p-val">2-й</div>
-            <div class="p-sub">Второй 5★ на лимитном баннере — всегда персонаж этого баннера</div>
-          </div>
-          <div class="pity-item">
-            <div class="p-label">4★ гарантия</div>
-            <div class="p-val">10</div>
-            <div class="p-sub">Каждые 10 желаний — минимум один предмет 4★ или выше</div>
-          </div>
-          <div class="pity-item">
-            <div class="p-label">Стоимость 1 желания</div>
-            <div class="p-val">160</div>
-            <div class="p-sub">Примогемов, или 1 Переплетённая / Лазурная судьба</div>
-          </div>
-          <div class="pity-item">
-            <div class="p-label">Питти сохраняется</div>
-            <div class="p-val">✓</div>
-            <div class="p-sub">Накопленные желания переносятся на следующую версию одного типа баннера</div>
-          </div>
-        </div>
+  <head>
+    <!-- include:head -->
+    <title>Баннеры — Genshin Wiki</title>
+    <meta name="description" content="Текущие и ближайшие молитвы Genshin Impact и правила гарантии." />
+  </head>
+  <body>
+    <!-- include:header -->
+    <main id="main">
+      <div class="page-hero">
+        <h1>🌟 Баннеры</h1>
+        <p>Текущие и ближайшие молитвы, а также как работает гарантия</p>
       </div>
-
-      <!-- EVENTS -->
-      <div class="events-title">🎉 Текущие события версии 5.7</div>
-      <div id="events-list"></div>
-
-    </div>
-  </main>
-
-  <footer>
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <a class="logo" href="index.html"><span class="logo-star">✦</span>&nbsp;Genshin Wiki</a>
-        <p style="margin-top:9px;">Неофициальная энциклопедия. © HoYoverse / miHoYo.</p>
+      <div class="cards-container">
+        <h2 class="section-title">Сейчас</h2>
+        <div class="banners-grid" id="banners-current"></div>
+        <h2 class="section-title">Скоро</h2>
+        <div class="banners-grid" id="banners-upcoming"></div>
+        <h2 class="section-title">Как работает гарантия</h2>
+        <div class="pity-grid" id="pity"></div>
+        <p class="as-of">Данные актуальны на <span data-as-of></span>. Расписание может измениться — сверяйтесь с объявлениями в игре.</p>
       </div>
-      <div class="footer-col">
-        <h5>Разделы</h5>
-        <a href="characters.html">Персонажи</a><a href="weapons.html">Оружие</a><a href="artifacts.html">Артефакты</a>
-      </div>
-      <div class="footer-col">
-        <h5>Мир</h5>
-        <a href="regions.html">Регионы</a><a href="guides.html">Гайды</a><a href="patches.html">Патчноуты</a>
-      </div>
-      <div class="footer-col">
-        <h5>Аккаунт</h5>
-        <a href="auth.html">Войти</a><a href="auth.html">Регистрация</a><a href="banners.html">Баннеры</a>
-      </div>
-    </div>
-    <div class="footer-bottom">© 2025 Genshin Wiki — Fan Project &nbsp;|&nbsp; Genshin Impact © HoYoverse</div>
-  </footer>
-
-  <script src="data.js"></script>
-  <script src="banners.js"></script>
-</body>
-
+    </main>
+    <!-- include:footer -->
+    <script type="module" src="/src/pages/banners.js"></script>
+  </body>
 </html>

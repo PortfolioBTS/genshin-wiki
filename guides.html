@@ -1,74 +1,24 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
-<head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Гайды — Genshin Wiki</title>
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-<script src="emailjs-config.js"></script>
-</head>
-<body>
-<header>
-  <a class="logo" href="index.html"><span class="logo-star">✦</span> Genshin Wiki</a>
-  <nav>
-    <a href="index.html">Главная</a>
-    <a href="characters.html">Персонажи</a>
-    <a href="weapons.html">Оружие</a>
-    <a href="artifacts.html">Артефакты</a>
-    <a href="regions.html">Регионы</a>
-    <a href="guides.html" class="active">Гайды</a>
-    <a href="patches.html">Патчноуты</a>
-    <a href="banners.html">Баннеры</a>
-  </nav>
-  <a class="btn-reg" href="auth.html" id="auth-btn">Войти / Регистрация</a>
-</header>
-
-<main>
-  <div class="page-hero">
-    <h1>📖 Гайды</h1>
-    <p>От первых шагов до мастерства — руководства для всех уровней опыта</p>
-  </div>
-
-  <div class="filter-bar">
-    <span class="filter-label">Категория:</span>
-    <button class="filter-btn active" onclick="setTag('all',this)">Все</button>
-    <button class="filter-btn" onclick="setTag('Новичок',this)">🌱 Новичок</button>
-    <button class="filter-btn" onclick="setTag('Механики',this)">⚙️ Механики</button>
-    <button class="filter-btn" onclick="setTag('Прокачка',this)">📈 Прокачка</button>
-    <button class="filter-btn" onclick="setTag('Контент',this)">⚔️ Контент</button>
-    <button class="filter-btn" onclick="setTag('Ресурсы',this)">💎 Ресурсы</button>
-    <button class="filter-btn" onclick="setTag('Прогресс',this)">🏆 Прогресс</button>
-  </div>
-
-  <div class="cards-container">
-    <div class="guides-list" id="guides-list"></div>
-  </div>
-
-  <div class="submit-panel" id="submit-wrap"></div>
-</main>
-
-<footer>
-  <div class="footer-grid">
-    <div class="footer-brand">
-      <a class="logo" href="index.html"><span class="logo-star">✦</span>&nbsp;Genshin Wiki</a>
-      <p style="margin-top:9px;">Неофициальная энциклопедия. © HoYoverse / miHoYo.</p>
-    </div>
-    <div class="footer-col"><h5>Разделы</h5>
-      <a href="characters.html">Персонажи</a><a href="weapons.html">Оружие</a><a href="artifacts.html">Артефакты</a>
-    </div>
-    <div class="footer-col"><h5>Мир</h5>
-      <a href="regions.html">Регионы</a><a href="guides.html">Гайды</a><a href="patches.html">Патчноуты</a>
-    </div>
-    <div class="footer-col"><h5>Аккаунт</h5>
-      <a href="auth.html">Войти</a><a href="auth.html">Регистрация</a><a href="banners.html">Баннеры</a>
-    </div>
-  </div>
-  <div class="footer-bottom">© 2025 Genshin Wiki — Fan Project &nbsp;|&nbsp; Genshin Impact © HoYoverse</div>
-</footer>
-
-<div class="toast" id="toast"></div>
-<script src="data.js"></script>
-<script src="guides.js"></script>
-</body>
+  <head>
+    <!-- include:head -->
+    <title>Гайды — Genshin Wiki</title>
+    <meta name="description" content="Короткие гайды по Genshin Impact: от первых шагов до Витой бездны." />
+  </head>
+  <body>
+    <!-- include:header -->
+    <main id="main">
+      <div class="page-hero">
+        <h1>📖 Гайды</h1>
+        <p>От первых шагов до мастерства — короткие руководства для любого уровня</p>
+      </div>
+      <div class="filter-bar" id="guide-filters"></div>
+      <div class="cards-container">
+        <div class="guides-list" id="guides"></div>
+      </div>
+      <section class="submit-panel" id="submit-wrap"></section>
+    </main>
+    <!-- include:footer -->
+    <script type="module" src="/src/pages/guides.js"></script>
+  </body>
 </html>
