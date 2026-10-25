@@ -2,7 +2,7 @@ import { resolve } from 'node:path';
 import { defineConfig } from 'vite';
 import { partialsPlugin } from './build/partials-plugin.js';
 
-// Страницы, уже перенесённые на Vite. Каждая задача переноса дописывает свою.
+// Все HTML-страницы сайта (файлы в корне проекта).
 const PAGES = [
   'index',
   'characters',

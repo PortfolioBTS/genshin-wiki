@@ -3,24 +3,6 @@ node_modules/
 scripts/data/node_modules/
 src/data/generated/
 .superpowers/
-docs/
+docs/superpowers/
 package-lock.json
 scripts/data/package-lock.json
-
-# Старая версия сайта — удаляется в Task 16
-/*.html
-/*.css
-/data.js
-/auth.js
-/characters.js
-/weapons.js
-/artifacts.js
-/regions.js
-/guides.js
-/patches.js
-/banners.js
-/index.js
-/shared.js
-/emailjs-config.js
-/README.md
-/SETUP.md

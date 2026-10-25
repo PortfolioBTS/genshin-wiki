@@ -31,27 +31,46 @@
           <form data-form="login" novalidate>
             <div class="field">
               <label for="l-email">Электронная почта</label>
-              <input type="email" id="l-email" autocomplete="email" placeholder="traveler@teyvat.com" />
+              <input
+                type="email"
+                id="l-email"
+                autocomplete="email"
+                placeholder="traveler@teyvat.com"
+              />
               <p class="field-err" id="l-email-err"></p>
             </div>
             <div class="field">
               <label for="l-pass">Пароль</label>
               <div class="pass-wrap">
                 <input type="password" id="l-pass" autocomplete="current-password" />
-                <button class="pass-toggle" type="button" data-action="toggle-pass:l-pass" aria-label="Показать пароль" aria-pressed="false">👁</button>
+                <button
+                  class="pass-toggle"
+                  type="button"
+                  data-action="toggle-pass:l-pass"
+                  aria-label="Показать пароль"
+                  aria-pressed="false"
+                >
+                  👁
+                </button>
               </div>
               <p class="field-err" id="l-pass-err"></p>
             </div>
-            <button class="link-btn forgot-link" type="button" data-action="show:forgot">Забыли пароль?</button>
+            <button class="link-btn forgot-link" type="button" data-action="show:forgot">
+              Забыли пароль?
+            </button>
             <button class="btn-main" type="submit" id="btn-login">Войти</button>
           </form>
           <div class="or-div">или</div>
-          <button class="btn-secondary" type="button" data-action="tab:register">Создать аккаунт</button>
+          <button class="btn-secondary" type="button" data-action="tab:register">
+            Создать аккаунт
+          </button>
         </section>
 
         <section class="auth-panel" data-panel="register" aria-labelledby="register-title">
           <h2 id="register-title">Добро пожаловать!</h2>
-          <p class="sub">Создайте демо-аккаунт. Мы отправим 6-значный код для подтверждения почты.</p>
+          <p class="sub">
+            Создайте демо-аккаунт. Мы отправим 6-значный код для подтверждения почты.
+          </p>
           <div class="status-banner" id="register-banner" role="status"></div>
           <form data-form="register" novalidate>
             <div class="field">
@@ -61,14 +80,33 @@
             </div>
             <div class="field">
               <label for="r-email">Электронная почта</label>
-              <input type="email" id="r-email" autocomplete="email" placeholder="traveler@teyvat.com" />
+              <input
+                type="email"
+                id="r-email"
+                autocomplete="email"
+                placeholder="traveler@teyvat.com"
+              />
               <p class="field-err" id="r-email-err"></p>
             </div>
             <div class="field">
               <label for="r-pass">Пароль</label>
               <div class="pass-wrap">
-                <input type="password" id="r-pass" autocomplete="new-password" placeholder="Минимум 8 символов" data-strength="s" />
-                <button class="pass-toggle" type="button" data-action="toggle-pass:r-pass" aria-label="Показать пароль" aria-pressed="false">👁</button>
+                <input
+                  type="password"
+                  id="r-pass"
+                  autocomplete="new-password"
+                  placeholder="Минимум 8 символов"
+                  data-strength="s"
+                />
+                <button
+                  class="pass-toggle"
+                  type="button"
+                  data-action="toggle-pass:r-pass"
+                  aria-label="Показать пароль"
+                  aria-pressed="false"
+                >
+                  👁
+                </button>
               </div>
               <div class="strength-bar"><div class="strength-fill" id="s-fill"></div></div>
               <p class="strength-label" id="s-label" aria-live="polite"></p>
@@ -78,16 +116,29 @@
               <label for="r-pass2">Повторите пароль</label>
               <div class="pass-wrap">
                 <input type="password" id="r-pass2" autocomplete="new-password" />
-                <button class="pass-toggle" type="button" data-action="toggle-pass:r-pass2" aria-label="Показать пароль" aria-pressed="false">👁</button>
+                <button
+                  class="pass-toggle"
+                  type="button"
+                  data-action="toggle-pass:r-pass2"
+                  aria-label="Показать пароль"
+                  aria-pressed="false"
+                >
+                  👁
+                </button>
               </div>
               <p class="field-err" id="r-pass2-err"></p>
             </div>
             <label class="checkbox-row">
               <input type="checkbox" id="r-agree" />
-              <span>Я понимаю, что это демо-аккаунт фан-проекта, не связанного с HoYoverse, и он хранится только в этом браузере.</span>
+              <span
+                >Я понимаю, что это демо-аккаунт фан-проекта, не связанного с HoYoverse, и он
+                хранится только в этом браузере.</span
+              >
             </label>
             <p class="field-err" id="r-agree-err"></p>
-            <button class="btn-main" type="submit" id="btn-register">Создать аккаунт и получить код</button>
+            <button class="btn-main" type="submit" id="btn-register">
+              Создать аккаунт и получить код
+            </button>
           </form>
           <div class="or-div">уже есть аккаунт?</div>
           <button class="btn-secondary" type="button" data-action="tab:login">Войти</button>
@@ -110,7 +161,9 @@
             </p>
             <button class="btn-main" type="submit" id="btn-verify">Подтвердить почту</button>
           </form>
-          <button class="btn-secondary" type="button" data-action="show:register">← Изменить данные</button>
+          <button class="btn-secondary" type="button" data-action="show:register">
+            ← Изменить данные
+          </button>
         </section>
 
         <section class="auth-panel" data-panel="forgot" aria-labelledby="forgot-title">
@@ -120,12 +173,19 @@
           <form data-form="forgot" novalidate>
             <div class="field">
               <label for="f-email">Электронная почта</label>
-              <input type="email" id="f-email" autocomplete="email" placeholder="traveler@teyvat.com" />
+              <input
+                type="email"
+                id="f-email"
+                autocomplete="email"
+                placeholder="traveler@teyvat.com"
+              />
               <p class="field-err" id="f-email-err"></p>
             </div>
             <button class="btn-main" type="submit" id="btn-forgot">Отправить код сброса</button>
           </form>
-          <button class="btn-secondary" type="button" data-action="tab:login">← Назад ко входу</button>
+          <button class="btn-secondary" type="button" data-action="tab:login">
+            ← Назад ко входу
+          </button>
         </section>
 
         <section class="auth-panel" data-panel="reset-code" aria-labelledby="reset-title">
@@ -150,8 +210,22 @@
             <div class="field">
               <label for="np-pass">Новый пароль</label>
               <div class="pass-wrap">
-                <input type="password" id="np-pass" autocomplete="new-password" placeholder="Минимум 8 символов" data-strength="s2" />
-                <button class="pass-toggle" type="button" data-action="toggle-pass:np-pass" aria-label="Показать пароль" aria-pressed="false">👁</button>
+                <input
+                  type="password"
+                  id="np-pass"
+                  autocomplete="new-password"
+                  placeholder="Минимум 8 символов"
+                  data-strength="s2"
+                />
+                <button
+                  class="pass-toggle"
+                  type="button"
+                  data-action="toggle-pass:np-pass"
+                  aria-label="Показать пароль"
+                  aria-pressed="false"
+                >
+                  👁
+                </button>
               </div>
               <div class="strength-bar"><div class="strength-fill" id="s2-fill"></div></div>
               <p class="strength-label" id="s2-label" aria-live="polite"></p>
@@ -160,14 +234,26 @@
               <label for="np-pass2">Повторите пароль</label>
               <div class="pass-wrap">
                 <input type="password" id="np-pass2" autocomplete="new-password" />
-                <button class="pass-toggle" type="button" data-action="toggle-pass:np-pass2" aria-label="Показать пароль" aria-pressed="false">👁</button>
+                <button
+                  class="pass-toggle"
+                  type="button"
+                  data-action="toggle-pass:np-pass2"
+                  aria-label="Показать пароль"
+                  aria-pressed="false"
+                >
+                  👁
+                </button>
               </div>
             </div>
             <button class="btn-main" type="submit" id="btn-new-pass">Сохранить новый пароль</button>
           </form>
         </section>
 
-        <section class="auth-panel success-screen" data-panel="success" aria-labelledby="success-title">
+        <section
+          class="auth-panel success-screen"
+          data-panel="success"
+          aria-labelledby="success-title"
+        >
           <div class="success-icon" aria-hidden="true">✅</div>
           <h2 id="success-title">Почта подтверждена!</h2>
           <p>
@@ -175,7 +261,9 @@
             страницах вики.
           </p>
           <a class="btn-go" href="index.html">На главную →</a>
-          <button class="btn-secondary" type="button" data-action="show:profile">Открыть профиль</button>
+          <button class="btn-secondary" type="button" data-action="show:profile">
+            Открыть профиль
+          </button>
         </section>
 
         <section class="auth-panel profile-screen" data-panel="profile" aria-labelledby="p-name">
@@ -184,8 +272,14 @@
           <p class="profile-email" id="p-email"></p>
           <p class="verified-badge">✓ Почта подтверждена (демо)</p>
           <dl class="profile-stats">
-            <div class="ps-item"><dt>Предложений</dt><dd id="p-proposals">0</dd></div>
-            <div class="ps-item"><dt>С нами с</dt><dd id="p-joined">—</dd></div>
+            <div class="ps-item">
+              <dt>Предложений</dt>
+              <dd id="p-proposals">0</dd>
+            </div>
+            <div class="ps-item">
+              <dt>С нами с</dt>
+              <dd id="p-joined">—</dd>
+            </div>
           </dl>
           <div class="proposals-block">
             <h3>Мои предложения</h3>
