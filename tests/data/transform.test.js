@@ -63,6 +63,12 @@ describe('cleanText', () => {
     expect(cleanText('HP < 50% & "x"')).toBe('HP &lt; 50% &amp; &quot;x&quot;');
   });
 
+  it('drops leftover asterisks from nested bold markers', () => {
+    expect(cleanText('**Благодатью кенозиса******, повышая силу')).toBe(
+      '<b class="hl">Благодатью кенозиса</b>, повышая силу',
+    );
+  });
+
   it('returns an empty string for missing text', () => {
     expect(cleanText(undefined)).toBe('');
   });
@@ -145,6 +151,18 @@ describe('toCharacterDetail', () => {
       ascensionStat: 'Крит. урон',
       splash: 'UI_Gacha_AvatarImg_SkirkNew',
     });
+  });
+
+  it('skips empty talent and constellation slots without a name', () => {
+    const detail = toCharacterDetail(
+      f.skirkRu,
+      f.skirkEn,
+      { ...f.skirkTalents, combatsp: {} },
+      { ...f.skirkConstellations, c6: { description: '' } },
+    );
+    expect(detail.talents.every((t) => t.name)).toBe(true);
+    expect(detail.talents).toHaveLength(5);
+    expect(detail.constellations.map((c) => c.level)).toEqual([1, 2, 3, 4, 5]);
   });
 
   it('returns empty lists when talents and constellations are missing', () => {

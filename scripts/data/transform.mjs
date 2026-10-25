@@ -70,9 +70,13 @@ export function mapRegion(associationType, englishName) {
 export function cleanText(text) {
   if (!text) return '';
   const withoutTags = String(text).replace(/<\/?[a-zA-Z][^>]*>/g, '');
-  return escapeHtml(withoutTags)
-    .replace(/\*\*(.+?)\*\*/g, '<b class="hl">$1</b>')
-    .replace(/\r?\n/g, '<br>');
+  return (
+    escapeHtml(withoutTags)
+      .replace(/\*\*(.+?)\*\*/g, '<b class="hl">$1</b>')
+      // В игровых текстах встречаются вложенные маркеры (**Текст******).
+      .replace(/\*{2,}/g, '')
+      .replace(/\r?\n/g, '<br>')
+  );
 }
 
 export function formatSubstat(type, value) {
@@ -112,7 +116,7 @@ function talentList(talents) {
   if (!talents) return [];
   const pick = (keys, kind) =>
     keys
-      .filter((key) => talents[key])
+      .filter((key) => talents[key]?.name)
       .map((key) => ({ kind, name: talents[key].name, html: cleanText(talents[key].description) }));
   return [...pick(COMBAT_KEYS, 'combat'), ...pick(PASSIVE_KEYS, 'passive')];
 }
@@ -120,7 +124,7 @@ function talentList(talents) {
 function constellationList(constellations) {
   if (!constellations) return [];
   return [1, 2, 3, 4, 5, 6]
-    .filter((level) => constellations[`c${level}`])
+    .filter((level) => constellations[`c${level}`]?.name)
     .map((level) => {
       const c = constellations[`c${level}`];
       return { level, name: c.name, html: cleanText(c.description) };
