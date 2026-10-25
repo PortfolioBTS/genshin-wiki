@@ -1,0 +1,2546 @@
+[
+  {
+    "type": "character",
+    "slug": "aino",
+    "name": "Айно",
+    "icon": "UI_AvatarIcon_Aino"
+  },
+  {
+    "type": "character",
+    "slug": "alyosha",
+    "name": "Алёша",
+    "icon": "UI_AvatarIcon_Alyosha"
+  },
+  {
+    "type": "character",
+    "slug": "alhaitham",
+    "name": "Аль-Хайтам",
+    "icon": "UI_AvatarIcon_Alhatham"
+  },
+  {
+    "type": "character",
+    "slug": "albedo",
+    "name": "Альбедо",
+    "icon": "UI_AvatarIcon_Albedo"
+  },
+  {
+    "type": "character",
+    "slug": "arlecchino",
+    "name": "Арлекино",
+    "icon": "UI_AvatarIcon_Arlecchino"
+  },
+  {
+    "type": "character",
+    "slug": "kamisato-ayaka",
+    "name": "Аяка",
+    "icon": "UI_AvatarIcon_Ayaka"
+  },
+  {
+    "type": "character",
+    "slug": "kamisato-ayato",
+    "name": "Аято",
+    "icon": "UI_AvatarIcon_Ayato"
+  },
+  {
+    "type": "character",
+    "slug": "baizhu",
+    "name": "Бай Чжу",
+    "icon": "UI_AvatarIcon_Baizhuer"
+  },
+  {
+    "type": "character",
+    "slug": "barbara",
+    "name": "Барбара",
+    "icon": "UI_AvatarIcon_Barbara"
+  },
+  {
+    "type": "character",
+    "slug": "bennett",
+    "name": "Беннет",
+    "icon": "UI_AvatarIcon_Bennett"
+  },
+  {
+    "type": "character",
+    "slug": "beidou",
+    "name": "Бэй Доу",
+    "icon": "UI_AvatarIcon_Beidou"
+  },
+  {
+    "type": "character",
+    "slug": "varesa",
+    "name": "Вареса",
+    "icon": "UI_AvatarIcon_Varesa"
+  },
+  {
+    "type": "character",
+    "slug": "varka",
+    "name": "Варка",
+    "icon": "UI_AvatarIcon_Varka"
+  },
+  {
+    "type": "character",
+    "slug": "venti",
+    "name": "Венти",
+    "icon": "UI_AvatarIcon_Venti"
+  },
+  {
+    "type": "character",
+    "slug": "vesna",
+    "name": "Весна",
+    "icon": "UI_AvatarIcon_Vesna"
+  },
+  {
+    "type": "character",
+    "slug": "vodyanitsa",
+    "name": "Водяница",
+    "icon": "UI_AvatarIcon_Vodyanitsa"
+  },
+  {
+    "type": "character",
+    "slug": "ganyu",
+    "name": "Гань Юй",
+    "icon": "UI_AvatarIcon_Ganyu"
+  },
+  {
+    "type": "character",
+    "slug": "gorou",
+    "name": "Горо",
+    "icon": "UI_AvatarIcon_Gorou"
+  },
+  {
+    "type": "character",
+    "slug": "dahlia",
+    "name": "Далия",
+    "icon": "UI_AvatarIcon_Dahlia"
+  },
+  {
+    "type": "character",
+    "slug": "jean",
+    "name": "Джинн",
+    "icon": "UI_AvatarIcon_Qin"
+  },
+  {
+    "type": "character",
+    "slug": "diluc",
+    "name": "Дилюк",
+    "icon": "UI_AvatarIcon_Diluc"
+  },
+  {
+    "type": "character",
+    "slug": "diona",
+    "name": "Диона",
+    "icon": "UI_AvatarIcon_Diona"
+  },
+  {
+    "type": "character",
+    "slug": "dori",
+    "name": "Дори",
+    "icon": "UI_AvatarIcon_Dori"
+  },
+  {
+    "type": "character",
+    "slug": "durin",
+    "name": "Дурин",
+    "icon": "UI_AvatarIcon_Durin"
+  },
+  {
+    "type": "character",
+    "slug": "dehya",
+    "name": "Дэхья",
+    "icon": "UI_AvatarIcon_Dehya"
+  },
+  {
+    "type": "character",
+    "slug": "yelan",
+    "name": "Е Лань",
+    "icon": "UI_AvatarIcon_Yelan"
+  },
+  {
+    "type": "character",
+    "slug": "yoimiya",
+    "name": "Ёимия",
+    "icon": "UI_AvatarIcon_Yoimiya"
+  },
+  {
+    "type": "character",
+    "slug": "iansan",
+    "name": "Иансан",
+    "icon": "UI_AvatarIcon_Iansan"
+  },
+  {
+    "type": "character",
+    "slug": "illuga",
+    "name": "Иллуги",
+    "icon": "UI_AvatarIcon_Illuga"
+  },
+  {
+    "type": "character",
+    "slug": "ineffa",
+    "name": "Инеффа",
+    "icon": "UI_AvatarIcon_Ineffa"
+  },
+  {
+    "type": "character",
+    "slug": "arataki-itto",
+    "name": "Итто",
+    "icon": "UI_AvatarIcon_Itto"
+  },
+  {
+    "type": "character",
+    "slug": "ifa",
+    "name": "Ифа",
+    "icon": "UI_AvatarIcon_Ifa"
+  },
+  {
+    "type": "character",
+    "slug": "gaming",
+    "name": "Ка Мин",
+    "icon": "UI_AvatarIcon_Gaming"
+  },
+  {
+    "type": "character",
+    "slug": "kaveh",
+    "name": "Кавех",
+    "icon": "UI_AvatarIcon_Kaveh"
+  },
+  {
+    "type": "character",
+    "slug": "kaedehara-kazuha",
+    "name": "Кадзуха",
+    "icon": "UI_AvatarIcon_Kazuha"
+  },
+  {
+    "type": "character",
+    "slug": "candace",
+    "name": "Кандакия",
+    "icon": "UI_AvatarIcon_Candace"
+  },
+  {
+    "type": "character",
+    "slug": "kachina",
+    "name": "Качина",
+    "icon": "UI_AvatarIcon_Kachina"
+  },
+  {
+    "type": "character",
+    "slug": "kinich",
+    "name": "Кинич",
+    "icon": "UI_AvatarIcon_Kinich"
+  },
+  {
+    "type": "character",
+    "slug": "kirara",
+    "name": "Кирара",
+    "icon": "UI_AvatarIcon_Momoka"
+  },
+  {
+    "type": "character",
+    "slug": "klee",
+    "name": "Кли",
+    "icon": "UI_AvatarIcon_Klee"
+  },
+  {
+    "type": "character",
+    "slug": "clorinde",
+    "name": "Клоринда",
+    "icon": "UI_AvatarIcon_Clorinde"
+  },
+  {
+    "type": "character",
+    "slug": "sangonomiya-kokomi",
+    "name": "Кокоми",
+    "icon": "UI_AvatarIcon_Kokomi"
+  },
+  {
+    "type": "character",
+    "slug": "collei",
+    "name": "Коллеи",
+    "icon": "UI_AvatarIcon_Collei"
+  },
+  {
+    "type": "character",
+    "slug": "columbina",
+    "name": "Коломбина",
+    "icon": "UI_AvatarIcon_Columbina"
+  },
+  {
+    "type": "character",
+    "slug": "keqing",
+    "name": "Кэ Цин",
+    "icon": "UI_AvatarIcon_Keqing"
+  },
+  {
+    "type": "character",
+    "slug": "kaeya",
+    "name": "Кэйа",
+    "icon": "UI_AvatarIcon_Kaeya"
+  },
+  {
+    "type": "character",
+    "slug": "layla",
+    "name": "Лайла",
+    "icon": "UI_AvatarIcon_Layla"
+  },
+  {
+    "type": "character",
+    "slug": "lan-yan",
+    "name": "Лань Янь",
+    "icon": "UI_AvatarIcon_Lanyan"
+  },
+  {
+    "type": "character",
+    "slug": "lauma",
+    "name": "Лаума",
+    "icon": "UI_AvatarIcon_Lauma"
+  },
+  {
+    "type": "character",
+    "slug": "lisa",
+    "name": "Лиза",
+    "icon": "UI_AvatarIcon_Lisa"
+  },
+  {
+    "type": "character",
+    "slug": "lynette",
+    "name": "Линетт",
+    "icon": "UI_AvatarIcon_Linette"
+  },
+  {
+    "type": "character",
+    "slug": "lyney",
+    "name": "Лини",
+    "icon": "UI_AvatarIcon_Liney"
+  },
+  {
+    "type": "character",
+    "slug": "linnea",
+    "name": "Линнея",
+    "icon": "UI_AvatarIcon_Linnea"
+  },
+  {
+    "type": "character",
+    "slug": "lohen",
+    "name": "Лоэн",
+    "icon": "UI_AvatarIcon_Lohen"
+  },
+  {
+    "type": "character",
+    "slug": "mavuika",
+    "name": "Мавуика",
+    "icon": "UI_AvatarIcon_Mavuika"
+  },
+  {
+    "type": "character",
+    "slug": "yumemizuki-mizuki",
+    "name": "Мидзуки",
+    "icon": "UI_AvatarIcon_Mizuki"
+  },
+  {
+    "type": "character",
+    "slug": "mika",
+    "name": "Мика",
+    "icon": "UI_AvatarIcon_Mika"
+  },
+  {
+    "type": "character",
+    "slug": "mona",
+    "name": "Мона",
+    "icon": "UI_AvatarIcon_Mona"
+  },
+  {
+    "type": "character",
+    "slug": "mualani",
+    "name": "Муалани",
+    "icon": "UI_AvatarIcon_Mualani"
+  },
+  {
+    "type": "character",
+    "slug": "navia",
+    "name": "Навия",
+    "icon": "UI_AvatarIcon_Navia"
+  },
+  {
+    "type": "character",
+    "slug": "nahida",
+    "name": "Нахида",
+    "icon": "UI_AvatarIcon_Nahida"
+  },
+  {
+    "type": "character",
+    "slug": "neuvillette",
+    "name": "Нёвиллет",
+    "icon": "UI_AvatarIcon_Neuvillette"
+  },
+  {
+    "type": "character",
+    "slug": "nefer",
+    "name": "Нефер",
+    "icon": "UI_AvatarIcon_Nefer"
+  },
+  {
+    "type": "character",
+    "slug": "nicole",
+    "name": "Николь",
+    "icon": "UI_AvatarIcon_Nicole"
+  },
+  {
+    "type": "character",
+    "slug": "nilou",
+    "name": "Нилу",
+    "icon": "UI_AvatarIcon_Nilou"
+  },
+  {
+    "type": "character",
+    "slug": "ningguang",
+    "name": "Нин Гуан",
+    "icon": "UI_AvatarIcon_Ningguang"
+  },
+  {
+    "type": "character",
+    "slug": "noelle",
+    "name": "Ноэлль",
+    "icon": "UI_AvatarIcon_Noel"
+  },
+  {
+    "type": "character",
+    "slug": "odette",
+    "name": "Одетта",
+    "icon": "UI_AvatarIcon_Odette"
+  },
+  {
+    "type": "character",
+    "slug": "ororon",
+    "name": "Оророн",
+    "icon": "UI_AvatarIcon_Olorun"
+  },
+  {
+    "type": "character",
+    "slug": "prune",
+    "name": "Прюн",
+    "icon": "UI_AvatarIcon_Prune"
+  },
+  {
+    "type": "character",
+    "slug": "traveler",
+    "name": "Путешественник",
+    "icon": "UI_AvatarIcon_PlayerGirl"
+  },
+  {
+    "type": "character",
+    "slug": "raiden-shogun",
+    "name": "Райдэн",
+    "icon": "UI_AvatarIcon_Shougun"
+  },
+  {
+    "type": "character",
+    "slug": "wriothesley",
+    "name": "Ризли",
+    "icon": "UI_AvatarIcon_Wriothesley"
+  },
+  {
+    "type": "character",
+    "slug": "rosaria",
+    "name": "Розария",
+    "icon": "UI_AvatarIcon_Rosaria"
+  },
+  {
+    "type": "character",
+    "slug": "razor",
+    "name": "Рэйзор",
+    "icon": "UI_AvatarIcon_Razor"
+  },
+  {
+    "type": "character",
+    "slug": "cyno",
+    "name": "Сайно",
+    "icon": "UI_AvatarIcon_Cyno"
+  },
+  {
+    "type": "character",
+    "slug": "sandrone",
+    "name": "Сандроне",
+    "icon": "UI_AvatarIcon_MarionetteNew"
+  },
+  {
+    "type": "character",
+    "slug": "kujou-sara",
+    "name": "Сара",
+    "icon": "UI_AvatarIcon_Sara"
+  },
+  {
+    "type": "character",
+    "slug": "sucrose",
+    "name": "Сахароза",
+    "icon": "UI_AvatarIcon_Sucrose"
+  },
+  {
+    "type": "character",
+    "slug": "sayu",
+    "name": "Саю",
+    "icon": "UI_AvatarIcon_Sayu"
+  },
+  {
+    "type": "character",
+    "slug": "sethos",
+    "name": "Сетос",
+    "icon": "UI_AvatarIcon_Sethos"
+  },
+  {
+    "type": "character",
+    "slug": "sigewinne",
+    "name": "Сиджвин",
+    "icon": "UI_AvatarIcon_Sigewinne"
+  },
+  {
+    "type": "character",
+    "slug": "xingqiu",
+    "name": "Син Цю",
+    "icon": "UI_AvatarIcon_Xingqiu"
+  },
+  {
+    "type": "character",
+    "slug": "kuki-shinobu",
+    "name": "Синобу",
+    "icon": "UI_AvatarIcon_Shinobu"
+  },
+  {
+    "type": "character",
+    "slug": "xinyan",
+    "name": "Синь Янь",
+    "icon": "UI_AvatarIcon_Xinyan"
+  },
+  {
+    "type": "character",
+    "slug": "citlali",
+    "name": "Ситлали",
+    "icon": "UI_AvatarIcon_Citlali"
+  },
+  {
+    "type": "character",
+    "slug": "skirk",
+    "name": "Скирк",
+    "icon": "UI_AvatarIcon_SkirkNew"
+  },
+  {
+    "type": "character",
+    "slug": "wanderer",
+    "name": "Странник",
+    "icon": "UI_AvatarIcon_Wanderer"
+  },
+  {
+    "type": "character",
+    "slug": "xiangling",
+    "name": "Сян Лин",
+    "icon": "UI_AvatarIcon_Xiangling"
+  },
+  {
+    "type": "character",
+    "slug": "xianyun",
+    "name": "Сянь Юнь",
+    "icon": "UI_AvatarIcon_Liuyun"
+  },
+  {
+    "type": "character",
+    "slug": "xiao",
+    "name": "Сяо",
+    "icon": "UI_AvatarIcon_Xiao"
+  },
+  {
+    "type": "character",
+    "slug": "tartaglia",
+    "name": "Тарталья",
+    "icon": "UI_AvatarIcon_Tartaglia"
+  },
+  {
+    "type": "character",
+    "slug": "tighnari",
+    "name": "Тигнари",
+    "icon": "UI_AvatarIcon_Tighnari"
+  },
+  {
+    "type": "character",
+    "slug": "chiori",
+    "name": "Тиори",
+    "icon": "UI_AvatarIcon_Chiori"
+  },
+  {
+    "type": "character",
+    "slug": "thoma",
+    "name": "Тома",
+    "icon": "UI_AvatarIcon_Tohma"
+  },
+  {
+    "type": "character",
+    "slug": "faruzan",
+    "name": "Фарузан",
+    "icon": "UI_AvatarIcon_Faruzan"
+  },
+  {
+    "type": "character",
+    "slug": "fischl",
+    "name": "Фишль",
+    "icon": "UI_AvatarIcon_Fischl"
+  },
+  {
+    "type": "character",
+    "slug": "flins",
+    "name": "Флинс",
+    "icon": "UI_AvatarIcon_Flins"
+  },
+  {
+    "type": "character",
+    "slug": "freminet",
+    "name": "Фремине",
+    "icon": "UI_AvatarIcon_Freminet"
+  },
+  {
+    "type": "character",
+    "slug": "furina",
+    "name": "Фурина",
+    "icon": "UI_AvatarIcon_Furina"
+  },
+  {
+    "type": "character",
+    "slug": "hu-tao",
+    "name": "Ху Тао",
+    "icon": "UI_AvatarIcon_Hutao"
+  },
+  {
+    "type": "character",
+    "slug": "shikanoin-heizou",
+    "name": "Хэйдзо",
+    "icon": "UI_AvatarIcon_Heizo"
+  },
+  {
+    "type": "character",
+    "slug": "zibai",
+    "name": "Цзы Бай",
+    "icon": "UI_AvatarIcon_Zibai"
+  },
+  {
+    "type": "character",
+    "slug": "qiqi",
+    "name": "Ци Ци",
+    "icon": "UI_AvatarIcon_Qiqi"
+  },
+  {
+    "type": "character",
+    "slug": "chasca",
+    "name": "Часка",
+    "icon": "UI_AvatarIcon_Chasca"
+  },
+  {
+    "type": "character",
+    "slug": "zhongli",
+    "name": "Чжун Ли",
+    "icon": "UI_AvatarIcon_Zhongli"
+  },
+  {
+    "type": "character",
+    "slug": "chongyun",
+    "name": "Чун Юнь",
+    "icon": "UI_AvatarIcon_Chongyun"
+  },
+  {
+    "type": "character",
+    "slug": "charlotte",
+    "name": "Шарлотта",
+    "icon": "UI_AvatarIcon_Charlotte"
+  },
+  {
+    "type": "character",
+    "slug": "chevreuse",
+    "name": "Шеврёз",
+    "icon": "UI_AvatarIcon_Chevreuse"
+  },
+  {
+    "type": "character",
+    "slug": "xilonen",
+    "name": "Шилонен",
+    "icon": "UI_AvatarIcon_Xilonen"
+  },
+  {
+    "type": "character",
+    "slug": "shenhe",
+    "name": "Шэнь Хэ",
+    "icon": "UI_AvatarIcon_Shenhe"
+  },
+  {
+    "type": "character",
+    "slug": "aloy",
+    "name": "Элой",
+    "icon": "UI_AvatarIcon_Aloy"
+  },
+  {
+    "type": "character",
+    "slug": "amber",
+    "name": "Эмбер",
+    "icon": "UI_AvatarIcon_Ambor"
+  },
+  {
+    "type": "character",
+    "slug": "emilie",
+    "name": "Эмилия",
+    "icon": "UI_AvatarIcon_Emilie"
+  },
+  {
+    "type": "character",
+    "slug": "eula",
+    "name": "Эола",
+    "icon": "UI_AvatarIcon_Eula"
+  },
+  {
+    "type": "character",
+    "slug": "escoffier",
+    "name": "Эскофье",
+    "icon": "UI_AvatarIcon_Escoffier"
+  },
+  {
+    "type": "character",
+    "slug": "yun-jin",
+    "name": "Юнь Цзинь",
+    "icon": "UI_AvatarIcon_Yunjin"
+  },
+  {
+    "type": "character",
+    "slug": "jahoda",
+    "name": "Ягода",
+    "icon": "UI_AvatarIcon_Jahoda"
+  },
+  {
+    "type": "character",
+    "slug": "yanfei",
+    "name": "Янь Фэй",
+    "icon": "UI_AvatarIcon_Feiyan"
+  },
+  {
+    "type": "character",
+    "slug": "yaoyao",
+    "name": "Яо Яо",
+    "icon": "UI_AvatarIcon_Yaoyao"
+  },
+  {
+    "type": "character",
+    "slug": "yae-miko",
+    "name": "Яэ Мико",
+    "icon": "UI_AvatarIcon_Yae"
+  },
+  {
+    "type": "weapon",
+    "slug": "aqua-simulacra",
+    "name": "Аква симулякрум",
+    "icon": "UI_EquipIcon_Bow_Kirin"
+  },
+  {
+    "type": "weapon",
+    "slug": "astral-vulture-s-crimson-plumage",
+    "name": "Алое перо звёздного грифа",
+    "icon": "UI_EquipIcon_Bow_Qoyllorsnova"
+  },
+  {
+    "type": "weapon",
+    "slug": "athame-artis",
+    "name": "Атаме артис",
+    "icon": "UI_EquipIcon_Sword_Motsognir"
+  },
+  {
+    "type": "weapon",
+    "slug": "starcaller-s-watch",
+    "name": "Бдение взывающего к звёздам",
+    "icon": "UI_EquipIcon_Catalyst_Figurines"
+  },
+  {
+    "type": "weapon",
+    "slug": "disaster-and-remorse",
+    "name": "Бедствие и раскаяние",
+    "icon": "UI_EquipIcon_Pole_Carbine"
+  },
+  {
+    "type": "weapon",
+    "slug": "splendor-of-tranquil-waters",
+    "name": "Блеск тихих вод",
+    "icon": "UI_EquipIcon_Sword_Regalis"
+  },
+  {
+    "type": "weapon",
+    "slug": "jadefall-s-splendor",
+    "name": "Великолепие лазурного свода",
+    "icon": "UI_EquipIcon_Catalyst_Morax"
+  },
+  {
+    "type": "weapon",
+    "slug": "verdict",
+    "name": "Вердикт",
+    "icon": "UI_EquipIcon_Claymore_GoldenVerdict"
+  },
+  {
+    "type": "weapon",
+    "slug": "everlasting-moonglow",
+    "name": "Вечное лунное сияние",
+    "icon": "UI_EquipIcon_Catalyst_Kaleido"
+  },
+  {
+    "type": "weapon",
+    "slug": "wolf-s-gravestone",
+    "name": "Волчья погибель",
+    "icon": "UI_EquipIcon_Claymore_Wolfmound"
+  },
+  {
+    "type": "weapon",
+    "slug": "tulaytullah-s-remembrance",
+    "name": "Воспоминания Тулайтуллы",
+    "icon": "UI_EquipIcon_Catalyst_Alaya"
+  },
+  {
+    "type": "weapon",
+    "slug": "nocturne-s-curtain-call",
+    "name": "Вызов ноктюрна",
+    "icon": "UI_EquipIcon_Catalyst_Brisingamen"
+  },
+  {
+    "type": "weapon",
+    "slug": "angelos-heptades",
+    "name": "Гептада ангела",
+    "icon": "UI_EquipIcon_Catalyst_FairyGarden"
+  },
+  {
+    "type": "weapon",
+    "slug": "thundering-pulse",
+    "name": "Громовой пульс",
+    "icon": "UI_EquipIcon_Bow_Narukami"
+  },
+  {
+    "type": "weapon",
+    "slug": "primordial-jade-cutter",
+    "name": "Драгоценный омут",
+    "icon": "UI_EquipIcon_Sword_Morax"
+  },
+  {
+    "type": "weapon",
+    "slug": "beyond-the-chrysalis",
+    "name": "За пределами кокона",
+    "icon": "UI_EquipIcon_Sword_Samosvist"
+  },
+  {
+    "type": "weapon",
+    "slug": "crane-s-echoing-call",
+    "name": "Звонкий клич журавля",
+    "icon": "UI_EquipIcon_Catalyst_MountainGale"
+  },
+  {
+    "type": "weapon",
+    "slug": "nightweaver-s-looking-glass",
+    "name": "Зеркало прядильщицы ночи",
+    "icon": "UI_EquipIcon_Catalyst_MenulisRing"
+  },
+  {
+    "type": "weapon",
+    "slug": "golden-frostbound-oath",
+    "name": "Золотая клятва льда",
+    "icon": "UI_EquipIcon_Bow_Alkonost"
+  },
+  {
+    "type": "weapon",
+    "slug": "kagura-s-verity",
+    "name": "Истина кагура",
+    "icon": "UI_EquipIcon_Catalyst_Narukami"
+  },
+  {
+    "type": "weapon",
+    "slug": "cashflow-supervision",
+    "name": "Казначейский надзор",
+    "icon": "UI_EquipIcon_Catalyst_Wheatley"
+  },
+  {
+    "type": "weapon",
+    "slug": "exaiphanes-blade",
+    "name": "Клинок озарения",
+    "icon": "UI_EquipIcon_Sword_WeaponQuestSnezhnaya"
+  },
+  {
+    "type": "weapon",
+    "slug": "fang-of-the-mountain-king",
+    "name": "Клык Горного короля",
+    "icon": "UI_EquipIcon_Claymore_EmeraldSword"
+  },
+  {
+    "type": "weapon",
+    "slug": "key-of-khaj-nisut",
+    "name": "Ключ Хадж-нисут",
+    "icon": "UI_EquipIcon_Sword_Deshret"
+  },
+  {
+    "type": "weapon",
+    "slug": "freedom-sworn",
+    "name": "Клятва свободы",
+    "icon": "UI_EquipIcon_Sword_Widsith"
+  },
+  {
+    "type": "weapon",
+    "slug": "redhorn-stonethresher",
+    "name": "Краснорогий камнеруб",
+    "icon": "UI_EquipIcon_Claymore_Itadorimaru"
+  },
+  {
+    "type": "weapon",
+    "slug": "summit-shaper",
+    "name": "Кромсатель пиков",
+    "icon": "UI_EquipIcon_Sword_Kunwu"
+  },
+  {
+    "type": "weapon",
+    "slug": "azurelight",
+    "name": "Лазурное сияние",
+    "icon": "UI_EquipIcon_Sword_OuterSword"
+  },
+  {
+    "type": "weapon",
+    "slug": "surf-s-up",
+    "name": "Лови волну",
+    "icon": "UI_EquipIcon_Catalyst_MechaPufferfish"
+  },
+  {
+    "type": "weapon",
+    "slug": "amos-bow",
+    "name": "Лук Амос",
+    "icon": "UI_EquipIcon_Bow_Amos"
+  },
+  {
+    "type": "weapon",
+    "slug": "beacon-of-the-reed-sea",
+    "name": "Маяк тростникового моря",
+    "icon": "UI_EquipIcon_Claymore_Deshret"
+  },
+  {
+    "type": "weapon",
+    "slug": "aquila-favonia",
+    "name": "Меч Сокола",
+    "icon": "UI_EquipIcon_Sword_Falcon"
+  },
+  {
+    "type": "weapon",
+    "slug": "lost-prayer-to-the-sacred-winds",
+    "name": "Молитва святым ветрам",
+    "icon": "UI_EquipIcon_Catalyst_Fourwinds"
+  },
+  {
+    "type": "weapon",
+    "slug": "whitelake-frostfeather",
+    "name": "Морозное перо белого озера",
+    "icon": "UI_EquipIcon_Sword_Swanlake"
+  },
+  {
+    "type": "weapon",
+    "slug": "skyward-spine",
+    "name": "Небесная ось",
+    "icon": "UI_EquipIcon_Pole_Dvalin"
+  },
+  {
+    "type": "weapon",
+    "slug": "skyward-pride",
+    "name": "Небесное величие",
+    "icon": "UI_EquipIcon_Claymore_Dvalin"
+  },
+  {
+    "type": "weapon",
+    "slug": "skyward-harp",
+    "name": "Небесное крыло",
+    "icon": "UI_EquipIcon_Bow_Dvalin"
+  },
+  {
+    "type": "weapon",
+    "slug": "skyward-atlas",
+    "name": "Небесный атлас",
+    "icon": "UI_EquipIcon_Catalyst_Dvalin"
+  },
+  {
+    "type": "weapon",
+    "slug": "skyward-blade",
+    "name": "Небесный меч",
+    "icon": "UI_EquipIcon_Sword_Dvalin"
+  },
+  {
+    "type": "weapon",
+    "slug": "the-unforged",
+    "name": "Некованый",
+    "icon": "UI_EquipIcon_Claymore_Kunwu"
+  },
+  {
+    "type": "weapon",
+    "slug": "primordial-jade-winged-spear",
+    "name": "Нефритовый коршун",
+    "icon": "UI_EquipIcon_Pole_Morax"
+  },
+  {
+    "type": "weapon",
+    "slug": "tome-of-the-eternal-flow",
+    "name": "Обряд вечного течения",
+    "icon": "UI_EquipIcon_Catalyst_Iudex"
+  },
+  {
+    "type": "weapon",
+    "slug": "hymn-of-the-maelstrom",
+    "name": "Ода водоворота",
+    "icon": "UI_EquipIcon_Catalyst_Bludnye"
+  },
+  {
+    "type": "weapon",
+    "slug": "bloodsoaked-ruins",
+    "name": "Окровавленные руины",
+    "icon": "UI_EquipIcon_Pole_TummaLyhty"
+  },
+  {
+    "type": "weapon",
+    "slug": "absolution",
+    "name": "Отпущение грехов",
+    "icon": "UI_EquipIcon_Sword_Estoc"
+  },
+  {
+    "type": "weapon",
+    "slug": "hunter-s-path",
+    "name": "Охотничья тропа",
+    "icon": "UI_EquipIcon_Bow_Ayus"
+  },
+  {
+    "type": "weapon",
+    "slug": "crimson-moon-s-semblance",
+    "name": "Очертания алой луны",
+    "icon": "UI_EquipIcon_Pole_BloodMoon"
+  },
+  {
+    "type": "weapon",
+    "slug": "memory-of-dust",
+    "name": "Память о пыли",
+    "icon": "UI_EquipIcon_Catalyst_Kunwu"
+  },
+  {
+    "type": "weapon",
+    "slug": "the-first-great-magic",
+    "name": "Первый великий фокус",
+    "icon": "UI_EquipIcon_Bow_Pledge"
+  },
+  {
+    "type": "weapon",
+    "slug": "vivid-notions",
+    "name": "Переливающиеся чаяния",
+    "icon": "UI_EquipIcon_Catalyst_VaresaTransformer"
+  },
+  {
+    "type": "weapon",
+    "slug": "peak-patrol-song",
+    "name": "Песнь патруля пиков",
+    "icon": "UI_EquipIcon_Sword_XochitlsTube"
+  },
+  {
+    "type": "weapon",
+    "slug": "song-of-broken-pines",
+    "name": "Песнь разбитых сосен",
+    "icon": "UI_EquipIcon_Claymore_Widsith"
+  },
+  {
+    "type": "weapon",
+    "slug": "gest-of-the-mighty-wolf",
+    "name": "Подвиг могучего волка",
+    "icon": "UI_EquipIcon_Claymore_EnsisAquilonis"
+  },
+  {
+    "type": "weapon",
+    "slug": "vortex-vanquisher",
+    "name": "Покоритель вихря",
+    "icon": "UI_EquipIcon_Pole_Kunwu"
+  },
+  {
+    "type": "weapon",
+    "slug": "polar-star",
+    "name": "Полярная звезда",
+    "icon": "UI_EquipIcon_Bow_Worldbane"
+  },
+  {
+    "type": "weapon",
+    "slug": "staff-of-the-scarlet-sands",
+    "name": "Посох алых песков",
+    "icon": "UI_EquipIcon_Pole_Deshret"
+  },
+  {
+    "type": "weapon",
+    "slug": "staff-of-homa",
+    "name": "Посох Хомы",
+    "icon": "UI_EquipIcon_Pole_Homa"
+  },
+  {
+    "type": "weapon",
+    "slug": "fractured-halo",
+    "name": "Расколотый ореол",
+    "icon": "UI_EquipIcon_Pole_Perdix"
+  },
+  {
+    "type": "weapon",
+    "slug": "mistsplitter-reforged",
+    "name": "Рассекающий туман",
+    "icon": "UI_EquipIcon_Sword_Narukami"
+  },
+  {
+    "type": "weapon",
+    "slug": "light-of-foliar-incision",
+    "name": "Свет лиственного разреза",
+    "icon": "UI_EquipIcon_Sword_Ayus"
+  },
+  {
+    "type": "weapon",
+    "slug": "lightbearing-moonshard",
+    "name": "Светоносный осколок луны",
+    "icon": "UI_EquipIcon_Sword_SilverwareSaw"
+  },
+  {
+    "type": "weapon",
+    "slug": "silvershower-heartstrings",
+    "name": "Сердечные струны дождя",
+    "icon": "UI_EquipIcon_Bow_Arcdange"
+  },
+  {
+    "type": "weapon",
+    "slug": "symphonist-of-scents",
+    "name": "Симфонист ароматов",
+    "icon": "UI_EquipIcon_Pole_Trident"
+  },
+  {
+    "type": "weapon",
+    "slug": "engulfing-lightning",
+    "name": "Сияющая жатва",
+    "icon": "UI_EquipIcon_Pole_Narukami"
+  },
+  {
+    "type": "weapon",
+    "slug": "a-thousand-floating-dreams",
+    "name": "Сновидения тысячи ночей",
+    "icon": "UI_EquipIcon_Catalyst_Ayus"
+  },
+  {
+    "type": "weapon",
+    "slug": "sunny-morning-sleep-in",
+    "name": "Сон солнечным утром",
+    "icon": "UI_EquipIcon_Catalyst_SakuraFan"
+  },
+  {
+    "type": "weapon",
+    "slug": "a-thousand-blazing-suns",
+    "name": "Тысяча ослепительных солнц",
+    "icon": "UI_EquipIcon_Claymore_RadianceSword"
+  },
+  {
+    "type": "weapon",
+    "slug": "uraku-misugiri",
+    "name": "Ураку мисугири",
+    "icon": "UI_EquipIcon_Sword_Needle"
+  },
+  {
+    "type": "weapon",
+    "slug": "calamity-queller",
+    "name": "Усмиритель бед",
+    "icon": "UI_EquipIcon_Pole_Santika"
+  },
+  {
+    "type": "weapon",
+    "slug": "haran-geppaku-futsu",
+    "name": "Харан гэппаку фуцу",
+    "icon": "UI_EquipIcon_Sword_Amenoma"
+  },
+  {
+    "type": "weapon",
+    "slug": "the-daybreak-chronicles",
+    "name": "Хроники рассвета",
+    "icon": "UI_EquipIcon_Bow_Arianna"
+  },
+  {
+    "type": "weapon",
+    "slug": "a-teaspoon-of-transcendence",
+    "name": "Чайная ложка трансцендентности",
+    "icon": "UI_EquipIcon_Claymore_CrystallineSword"
+  },
+  {
+    "type": "weapon",
+    "slug": "reliquary-of-truth",
+    "name": "Шкатулка истин",
+    "icon": "UI_EquipIcon_Catalyst_Sistrum"
+  },
+  {
+    "type": "weapon",
+    "slug": "lumidouce-elegy",
+    "name": "Элегия Люмидус",
+    "icon": "UI_EquipIcon_Pole_Muguet"
+  },
+  {
+    "type": "weapon",
+    "slug": "elegy-for-the-end",
+    "name": "Элегия погибели",
+    "icon": "UI_EquipIcon_Bow_Widsith"
+  },
+  {
+    "type": "weapon",
+    "slug": "ultimate-overlord-s-mega-magic-sword",
+    "name": "«Магический супермеч высшего владыки»",
+    "icon": "UI_EquipIcon_Claymore_Champion"
+  },
+  {
+    "type": "weapon",
+    "slug": "the-catch",
+    "name": "«Улов»",
+    "icon": "UI_EquipIcon_Pole_Mori"
+  },
+  {
+    "type": "weapon",
+    "slug": "makhaira-aquamarine",
+    "name": "Аквамарин Махайры",
+    "icon": "UI_EquipIcon_Claymore_Pleroma"
+  },
+  {
+    "type": "weapon",
+    "slug": "akuoumaru",
+    "name": "Акуомару",
+    "icon": "UI_EquipIcon_Claymore_Maria"
+  },
+  {
+    "type": "weapon",
+    "slug": "amenoma-kageuchi",
+    "name": "Амэнома Кагэути",
+    "icon": "UI_EquipIcon_Sword_Bakufu"
+  },
+  {
+    "type": "weapon",
+    "slug": "ballad-of-the-fjords",
+    "name": "Баллада фьордов",
+    "icon": "UI_EquipIcon_Pole_Shanty"
+  },
+  {
+    "type": "weapon",
+    "slug": "calamity-of-eshu",
+    "name": "Бедствие Эшу",
+    "icon": "UI_EquipIcon_Sword_SacrificialNgombe"
+  },
+  {
+    "type": "weapon",
+    "slug": "whiteblind",
+    "name": "Белая тень",
+    "icon": "UI_EquipIcon_Claymore_Exotic"
+  },
+  {
+    "type": "weapon",
+    "slug": "the-stringless",
+    "name": "Бесструнный",
+    "icon": "UI_EquipIcon_Bow_Troupe"
+  },
+  {
+    "type": "weapon",
+    "slug": "luxurious-sea-lord",
+    "name": "Благодатный владыка вод",
+    "icon": "UI_EquipIcon_Claymore_MillenniaTuna"
+  },
+  {
+    "type": "weapon",
+    "slug": "favonius-warbow",
+    "name": "Боевой лук Фавония",
+    "icon": "UI_EquipIcon_Bow_Zephyrus"
+  },
+  {
+    "type": "weapon",
+    "slug": "prospector-s-drill",
+    "name": "Бур рудоискателя",
+    "icon": "UI_EquipIcon_Pole_Mechanic"
+  },
+  {
+    "type": "weapon",
+    "slug": "mitternachts-waltz",
+    "name": "Вальс Нирваны Ночи",
+    "icon": "UI_EquipIcon_Bow_Nachtblind"
+  },
+  {
+    "type": "weapon",
+    "slug": "the-dockhand-s-assistant",
+    "name": "Верфь",
+    "icon": "UI_EquipIcon_Sword_Mechanic"
+  },
+  {
+    "type": "weapon",
+    "slug": "wine-and-song",
+    "name": "Вино и песни",
+    "icon": "UI_EquipIcon_Catalyst_Outlaw"
+  },
+  {
+    "type": "weapon",
+    "slug": "waveriding-whirl",
+    "name": "Вихрь на волнах",
+    "icon": "UI_EquipIcon_Catalyst_Umpakati"
+  },
+  {
+    "type": "weapon",
+    "slug": "wolf-fang",
+    "name": "Волчий клык",
+    "icon": "UI_EquipIcon_Sword_Boreas"
+  },
+  {
+    "type": "weapon",
+    "slug": "the-alley-flash",
+    "name": "Вспышка во тьме",
+    "icon": "UI_EquipIcon_Sword_Outlaw"
+  },
+  {
+    "type": "weapon",
+    "slug": "flame-forged-insight",
+    "name": "Выкованное пламенем озарение",
+    "icon": "UI_EquipIcon_Claymore_Polilith"
+  },
+  {
+    "type": "weapon",
+    "slug": "cloudforged",
+    "name": "Выкованный из облаков",
+    "icon": "UI_EquipIcon_Bow_Ultimatum"
+  },
+  {
+    "type": "weapon",
+    "slug": "fading-twilight",
+    "name": "Гаснущие сумерки",
+    "icon": "UI_EquipIcon_Bow_Fallensun"
+  },
+  {
+    "type": "weapon",
+    "slug": "talking-stick",
+    "name": "Говорящая палица",
+    "icon": "UI_EquipIcon_Claymore_BeastTamer"
+  },
+  {
+    "type": "weapon",
+    "slug": "finale-of-the-deep",
+    "name": "Грандиозный финал глубин",
+    "icon": "UI_EquipIcon_Sword_Vorpal"
+  },
+  {
+    "type": "weapon",
+    "slug": "dragon-s-bane",
+    "name": "Гроза драконов",
+    "icon": "UI_EquipIcon_Pole_Stardust"
+  },
+  {
+    "type": "weapon",
+    "slug": "range-gauge",
+    "name": "Дальномер",
+    "icon": "UI_EquipIcon_Bow_Mechanic"
+  },
+  {
+    "type": "weapon",
+    "slug": "favonius-greatsword",
+    "name": "Двуручный меч Фавония",
+    "icon": "UI_EquipIcon_Claymore_Zephyrus"
+  },
+  {
+    "type": "weapon",
+    "slug": "sapwood-blade",
+    "name": "Деревянный клинок",
+    "icon": "UI_EquipIcon_Sword_Arakalari"
+  },
+  {
+    "type": "weapon",
+    "slug": "dialogues-of-the-desert-sages",
+    "name": "Диалог пустынных мудрецов",
+    "icon": "UI_EquipIcon_Pole_Caduceus"
+  },
+  {
+    "type": "weapon",
+    "slug": "rainslasher",
+    "name": "Дождерез",
+    "icon": "UI_EquipIcon_Claymore_Perdue"
+  },
+  {
+    "type": "weapon",
+    "slug": "lion-s-roar",
+    "name": "Драконий рык",
+    "icon": "UI_EquipIcon_Sword_Rockkiller"
+  },
+  {
+    "type": "weapon",
+    "slug": "sacrificial-jade",
+    "name": "Жертвенный нефрит",
+    "icon": "UI_EquipIcon_Catalyst_Yue"
+  },
+  {
+    "type": "weapon",
+    "slug": "covenant-of-frost-and-snow",
+    "name": "Завет льда и снега",
+    "icon": "UI_EquipIcon_Bow_GlintstoneBow"
+  },
+  {
+    "type": "weapon",
+    "slug": "snow-tombed-starsilver",
+    "name": "Заснеженное звёздное серебро",
+    "icon": "UI_EquipIcon_Claymore_Dragonfell"
+  },
+  {
+    "type": "weapon",
+    "slug": "winter-s-heavy-heart",
+    "name": "Застывшее сердце зимы",
+    "icon": "UI_EquipIcon_Catalyst_FrostScepter"
+  },
+  {
+    "type": "weapon",
+    "slug": "the-viridescent-hunt",
+    "name": "Зелёный лук",
+    "icon": "UI_EquipIcon_Bow_Viridescent"
+  },
+  {
+    "type": "weapon",
+    "slug": "serenity-s-call",
+    "name": "Зов безмятежности",
+    "icon": "UI_EquipIcon_Sword_Ilmarinen"
+  },
+  {
+    "type": "weapon",
+    "slug": "clash-of-kings",
+    "name": "Игры королей",
+    "icon": "UI_EquipIcon_Catalyst_SandMemoria"
+  },
+  {
+    "type": "weapon",
+    "slug": "end-of-the-line",
+    "name": "Иссушитель",
+    "icon": "UI_EquipIcon_Bow_Fin"
+  },
+  {
+    "type": "weapon",
+    "slug": "dodoco-tales",
+    "name": "Истории Додоко",
+    "icon": "UI_EquipIcon_Catalyst_Ludiharpastum"
+  },
+  {
+    "type": "weapon",
+    "slug": "emberwell",
+    "name": "Источник пламени",
+    "icon": "UI_EquipIcon_Sword_GlintstoneSword"
+  },
+  {
+    "type": "weapon",
+    "slug": "kagotsurube-isshin",
+    "name": "Кагоцурубэ Иссин",
+    "icon": "UI_EquipIcon_Sword_Youtou"
+  },
+  {
+    "type": "weapon",
+    "slug": "sequence-of-solitude",
+    "name": "Каденция одиночества",
+    "icon": "UI_EquipIcon_Bow_Stinger"
+  },
+  {
+    "type": "weapon",
+    "slug": "lithic-spear",
+    "name": "Каменное копьё",
+    "icon": "UI_EquipIcon_Pole_Lapis"
+  },
+  {
+    "type": "weapon",
+    "slug": "lithic-blade",
+    "name": "Каменный меч",
+    "icon": "UI_EquipIcon_Claymore_Lapis"
+  },
+  {
+    "type": "weapon",
+    "slug": "katsuragikiri-nagamasa",
+    "name": "Кацурагикири Нагамаса",
+    "icon": "UI_EquipIcon_Claymore_Bakufu"
+  },
+  {
+    "type": "weapon",
+    "slug": "cinnabar-spindle",
+    "name": "Киноварное веретено",
+    "icon": "UI_EquipIcon_Sword_Opus"
+  },
+  {
+    "type": "weapon",
+    "slug": "blade-of-atonement",
+    "name": "Клинок искупления",
+    "icon": "UI_EquipIcon_Claymore_GlintstoneClaymore"
+  },
+  {
+    "type": "weapon",
+    "slug": "ibis-piercer",
+    "name": "Клюв ибиса",
+    "icon": "UI_EquipIcon_Bow_Ibis"
+  },
+  {
+    "type": "weapon",
+    "slug": "favonius-codex",
+    "name": "Кодекс Фавония",
+    "icon": "UI_EquipIcon_Catalyst_Zephyrus"
+  },
+  {
+    "type": "weapon",
+    "slug": "hakushin-ring",
+    "name": "Кольцо Хакусин",
+    "icon": "UI_EquipIcon_Catalyst_Bakufu"
+  },
+  {
+    "type": "weapon",
+    "slug": "ring-of-yaxche",
+    "name": "Кольцо Яшче",
+    "icon": "UI_EquipIcon_Catalyst_Isikhulu"
+  },
+  {
+    "type": "weapon",
+    "slug": "dragonspine-spear",
+    "name": "Копьё Драконьего хребта",
+    "icon": "UI_EquipIcon_Pole_Everfrost"
+  },
+  {
+    "type": "weapon",
+    "slug": "missive-windspear",
+    "name": "Копьё послания ветров",
+    "icon": "UI_EquipIcon_Pole_Windvane"
+  },
+  {
+    "type": "weapon",
+    "slug": "favonius-lance",
+    "name": "Копьё Фавония",
+    "icon": "UI_EquipIcon_Pole_Zephyrus"
+  },
+  {
+    "type": "weapon",
+    "slug": "royal-grimoire",
+    "name": "Королевский гримуар",
+    "icon": "UI_EquipIcon_Catalyst_Theocrat"
+  },
+  {
+    "type": "weapon",
+    "slug": "royal-greatsword",
+    "name": "Королевский двуручный меч",
+    "icon": "UI_EquipIcon_Claymore_Theocrat"
+  },
+  {
+    "type": "weapon",
+    "slug": "royal-bow",
+    "name": "Королевский лук",
+    "icon": "UI_EquipIcon_Bow_Theocrat"
+  },
+  {
+    "type": "weapon",
+    "slug": "royal-spear",
+    "name": "Королевское копьё",
+    "icon": "UI_EquipIcon_Pole_Theocrat"
+  },
+  {
+    "type": "weapon",
+    "slug": "sturdy-bone",
+    "name": "Крепкая кость",
+    "icon": "UI_EquipIcon_Sword_Umpakati"
+  },
+  {
+    "type": "weapon",
+    "slug": "mountain-bracing-bolt",
+    "name": "Крепящий горы шип",
+    "icon": "UI_EquipIcon_Pole_Umpakati"
+  },
+  {
+    "type": "weapon",
+    "slug": "kitain-cross-spear",
+    "name": "Крест-копьё Китаин",
+    "icon": "UI_EquipIcon_Pole_Bakufu"
+  },
+  {
+    "type": "weapon",
+    "slug": "snare-hook",
+    "name": "Крюк силка",
+    "icon": "UI_EquipIcon_Bow_Ilmarinen"
+  },
+  {
+    "type": "weapon",
+    "slug": "prized-isshin-blade",
+    "name": "Легендарный клинок Иссин",
+    "icon": "UI_EquipIcon_Sword_YoutouEnchanted"
+  },
+  {
+    "type": "weapon",
+    "slug": "prospector-s-shovel",
+    "name": "Лопата старателя",
+    "icon": "UI_EquipIcon_Pole_Ilmarinen"
+  },
+  {
+    "type": "weapon",
+    "slug": "mouun-s-moon",
+    "name": "Луна Моун",
+    "icon": "UI_EquipIcon_Bow_Maria"
+  },
+  {
+    "type": "weapon",
+    "slug": "xiphos-moonlight",
+    "name": "Лунное сияние ксифоса",
+    "icon": "UI_EquipIcon_Sword_Pleroma"
+  },
+  {
+    "type": "weapon",
+    "slug": "etherlight-spindlelute",
+    "name": "Лютня ткача света",
+    "icon": "UI_EquipIcon_Catalyst_SeeliesLute"
+  },
+  {
+    "type": "weapon",
+    "slug": "master-key",
+    "name": "Мастер-ключ",
+    "icon": "UI_EquipIcon_Claymore_Ilmarinen"
+  },
+  {
+    "type": "weapon",
+    "slug": "song-of-stillness",
+    "name": "Мелодия покоя",
+    "icon": "UI_EquipIcon_Bow_Vorpal"
+  },
+  {
+    "type": "weapon",
+    "slug": "royal-longsword",
+    "name": "Меч аристократов",
+    "icon": "UI_EquipIcon_Sword_Theocrat"
+  },
+  {
+    "type": "weapon",
+    "slug": "serpent-spine",
+    "name": "Меч драконьей кости",
+    "icon": "UI_EquipIcon_Claymore_Kione"
+  },
+  {
+    "type": "weapon",
+    "slug": "sword-of-narzissenkreuz",
+    "name": "Меч Нарциссенкрейца",
+    "icon": "UI_EquipIcon_Sword_Purewill"
+  },
+  {
+    "type": "weapon",
+    "slug": "sword-of-descension",
+    "name": "Меч нисхождения",
+    "icon": "UI_EquipIcon_Sword_Psalmus"
+  },
+  {
+    "type": "weapon",
+    "slug": "favonius-sword",
+    "name": "Меч Фавония",
+    "icon": "UI_EquipIcon_Sword_Zephyrus"
+  },
+  {
+    "type": "weapon",
+    "slug": "the-bell",
+    "name": "Меч-колокол",
+    "icon": "UI_EquipIcon_Claymore_Troupe"
+  },
+  {
+    "type": "weapon",
+    "slug": "the-flute",
+    "name": "Меч-флейта",
+    "icon": "UI_EquipIcon_Sword_Troupe"
+  },
+  {
+    "type": "weapon",
+    "slug": "frostbreath",
+    "name": "Морозное дыхание",
+    "icon": "UI_EquipIcon_Pole_FaesCrystalle"
+  },
+  {
+    "type": "weapon",
+    "slug": "mappa-mare",
+    "name": "Морской атлас",
+    "icon": "UI_EquipIcon_Catalyst_Exotic"
+  },
+  {
+    "type": "weapon",
+    "slug": "breezeborne-refrain",
+    "name": "Напевы нежного ветра",
+    "icon": "UI_EquipIcon_Bow_Windtalker"
+  },
+  {
+    "type": "weapon",
+    "slug": "scion-of-the-blazing-sun",
+    "name": "Наследник слепящего солнца",
+    "icon": "UI_EquipIcon_Bow_Gurabad"
+  },
+  {
+    "type": "weapon",
+    "slug": "new-bough",
+    "name": "Новая ветвь",
+    "icon": "UI_EquipIcon_Sword_SpikedStake"
+  },
+  {
+    "type": "weapon",
+    "slug": "windblume-ode",
+    "name": "Ода анемонии",
+    "icon": "UI_EquipIcon_Bow_Fleurfair"
+  },
+  {
+    "type": "weapon",
+    "slug": "oathsworn-eye",
+    "name": "Око клятвы",
+    "icon": "UI_EquipIcon_Catalyst_Jyanome"
+  },
+  {
+    "type": "weapon",
+    "slug": "eye-of-perception",
+    "name": "Око сознания",
+    "icon": "UI_EquipIcon_Catalyst_Truelens"
+  },
+  {
+    "type": "weapon",
+    "slug": "festering-desire",
+    "name": "Осквернённое желание",
+    "icon": "UI_EquipIcon_Sword_Magnum"
+  },
+  {
+    "type": "weapon",
+    "slug": "echoes-of-the-heart",
+    "name": "Отголоски сердца",
+    "icon": "UI_EquipIcon_Catalyst_GlintstoneCatalyst"
+  },
+  {
+    "type": "weapon",
+    "slug": "alley-hunter",
+    "name": "Охотник во тьме",
+    "icon": "UI_EquipIcon_Bow_Outlaw"
+  },
+  {
+    "type": "weapon",
+    "slug": "ash-graven-drinking-horn",
+    "name": "Пепельный рог",
+    "icon": "UI_EquipIcon_Catalyst_ConchSprayer"
+  },
+  {
+    "type": "weapon",
+    "slug": "fleuve-cendre-ferryman",
+    "name": "Перевозчик Флёв Сандр",
+    "icon": "UI_EquipIcon_Sword_Machination"
+  },
+  {
+    "type": "weapon",
+    "slug": "portable-power-saw",
+    "name": "Переносная мотопила",
+    "icon": "UI_EquipIcon_Claymore_Mechanic"
+  },
+  {
+    "type": "weapon",
+    "slug": "song-of-the-vigil",
+    "name": "Песнь бдения",
+    "icon": "UI_EquipIcon_Pole_GlintstonePolearm"
+  },
+  {
+    "type": "weapon",
+    "slug": "ballad-of-the-boundless-blue",
+    "name": "Песнь необъятной лазури",
+    "icon": "UI_EquipIcon_Catalyst_DandelionPoem"
+  },
+  {
+    "type": "weapon",
+    "slug": "the-widsith",
+    "name": "Песнь странника",
+    "icon": "UI_EquipIcon_Catalyst_Troupe"
+  },
+  {
+    "type": "weapon",
+    "slug": "crescent-pike",
+    "name": "Пика полумесяца",
+    "icon": "UI_EquipIcon_Pole_Exotic"
+  },
+  {
+    "type": "weapon",
+    "slug": "frostbearer",
+    "name": "Плод вечной мерзлоты",
+    "icon": "UI_EquipIcon_Catalyst_Everfrost"
+  },
+  {
+    "type": "weapon",
+    "slug": "fruit-of-fulfillment",
+    "name": "Плод восполнения",
+    "icon": "UI_EquipIcon_Catalyst_Arakalari"
+  },
+  {
+    "type": "weapon",
+    "slug": "fruitful-hook",
+    "name": "Плодотворный крюк",
+    "icon": "UI_EquipIcon_Claymore_Umpakati"
+  },
+  {
+    "type": "weapon",
+    "slug": "jade-vista",
+    "name": "Поникшая артемизия",
+    "icon": "UI_EquipIcon_Bow_ShatteredMirror"
+  },
+  {
+    "type": "weapon",
+    "slug": "sacrificer-s-staff",
+    "name": "Посох жертвующей",
+    "icon": "UI_EquipIcon_Pole_Krivule"
+  },
+  {
+    "type": "weapon",
+    "slug": "king-s-squire",
+    "name": "Приближённый короля",
+    "icon": "UI_EquipIcon_Bow_Arakalari"
+  },
+  {
+    "type": "weapon",
+    "slug": "moonpiercer",
+    "name": "Пронзающий луну",
+    "icon": "UI_EquipIcon_Pole_Arakalari"
+  },
+  {
+    "type": "weapon",
+    "slug": "prototype-archaic",
+    "name": "Прототип: Архаичный",
+    "icon": "UI_EquipIcon_Claymore_Proto"
+  },
+  {
+    "type": "weapon",
+    "slug": "prototype-starglitter",
+    "name": "Прототип: Звёздный блеск",
+    "icon": "UI_EquipIcon_Pole_Proto"
+  },
+  {
+    "type": "weapon",
+    "slug": "prototype-rancour",
+    "name": "Прототип: Злоба",
+    "icon": "UI_EquipIcon_Sword_Proto"
+  },
+  {
+    "type": "weapon",
+    "slug": "prototype-crescent",
+    "name": "Прототип: Полумесяц",
+    "icon": "UI_EquipIcon_Bow_Proto"
+  },
+  {
+    "type": "weapon",
+    "slug": "prototype-amber",
+    "name": "Прототип: Янтарь",
+    "icon": "UI_EquipIcon_Catalyst_Proto"
+  },
+  {
+    "type": "weapon",
+    "slug": "chain-breaker",
+    "name": "Разбивающий цепи",
+    "icon": "UI_EquipIcon_Bow_Isikhulu"
+  },
+  {
+    "type": "weapon",
+    "slug": "heretic-s-molten-blade",
+    "name": "Расплавленный клинок еретика",
+    "icon": "UI_EquipIcon_Sword_SerpentTooth"
+  },
+  {
+    "type": "weapon",
+    "slug": "moonweaver-s-dawn",
+    "name": "Рассвет прядильщицы луны",
+    "icon": "UI_EquipIcon_Sword_Miekka"
+  },
+  {
+    "type": "weapon",
+    "slug": "dawning-frost",
+    "name": "Рассветный иней",
+    "icon": "UI_EquipIcon_Catalyst_Ziedas"
+  },
+  {
+    "type": "weapon",
+    "slug": "forest-regalia",
+    "name": "Регалия леса",
+    "icon": "UI_EquipIcon_Claymore_Arakalari"
+  },
+  {
+    "type": "weapon",
+    "slug": "wavebreaker-s-fin",
+    "name": "Режущий волны плавник",
+    "icon": "UI_EquipIcon_Pole_Maria"
+  },
+  {
+    "type": "weapon",
+    "slug": "rust",
+    "name": "Ржавый лук",
+    "icon": "UI_EquipIcon_Bow_Recluse"
+  },
+  {
+    "type": "weapon",
+    "slug": "flowing-purity",
+    "name": "Сверкание чистых вод",
+    "icon": "UI_EquipIcon_Catalyst_Vorpal"
+  },
+  {
+    "type": "weapon",
+    "slug": "silver-light",
+    "name": "Серебряный свет",
+    "icon": "UI_EquipIcon_Sword_Fajian"
+  },
+  {
+    "type": "weapon",
+    "slug": "wandering-evenstar",
+    "name": "Скитающаяся звезда",
+    "icon": "UI_EquipIcon_Catalyst_Pleroma"
+  },
+  {
+    "type": "weapon",
+    "slug": "footprint-of-the-rainbow",
+    "name": "След радуги",
+    "icon": "UI_EquipIcon_Pole_Isikhulu"
+  },
+  {
+    "type": "weapon",
+    "slug": "deathmatch",
+    "name": "Смертельный бой",
+    "icon": "UI_EquipIcon_Pole_Gladiator"
+  },
+  {
+    "type": "weapon",
+    "slug": "solar-pearl",
+    "name": "Солнечная жемчужина",
+    "icon": "UI_EquipIcon_Catalyst_Resurrection"
+  },
+  {
+    "type": "weapon",
+    "slug": "compound-bow",
+    "name": "Составной лук",
+    "icon": "UI_EquipIcon_Bow_Exotic"
+  },
+  {
+    "type": "weapon",
+    "slug": "earth-shaker",
+    "name": "Сотрясающий землю",
+    "icon": "UI_EquipIcon_Claymore_Isikhulu"
+  },
+  {
+    "type": "weapon",
+    "slug": "rightful-reward",
+    "name": "Справедливая награда",
+    "icon": "UI_EquipIcon_Pole_Vorpal"
+  },
+  {
+    "type": "weapon",
+    "slug": "iron-sting",
+    "name": "Стальное жало",
+    "icon": "UI_EquipIcon_Sword_Exotic"
+  },
+  {
+    "type": "weapon",
+    "slug": "rainbow-serpent-s-rain-bow",
+    "name": "Струны дождя радужного змея",
+    "icon": "UI_EquipIcon_Bow_ElegguaBow"
+  },
+  {
+    "type": "weapon",
+    "slug": "tamayuratei-no-ohanashi",
+    "name": "Тамаюратэй но оханаси",
+    "icon": "UI_EquipIcon_Pole_Aoandon"
+  },
+  {
+    "type": "weapon",
+    "slug": "forged-by-the-golden-melody",
+    "name": "Творение золотой мелодии",
+    "icon": "UI_EquipIcon_Claymore_EscapeWheel"
+  },
+  {
+    "type": "weapon",
+    "slug": "tidal-shadow",
+    "name": "Тень волны",
+    "icon": "UI_EquipIcon_Claymore_Vorpal"
+  },
+  {
+    "type": "weapon",
+    "slug": "toukabou-shigure",
+    "name": "Токабо сигурэ",
+    "icon": "UI_EquipIcon_Sword_Kasabouzu"
+  },
+  {
+    "type": "weapon",
+    "slug": "flower-wreathed-feathers",
+    "name": "Украшенные цветами перья",
+    "icon": "UI_EquipIcon_Bow_Umpakati"
+  },
+  {
+    "type": "weapon",
+    "slug": "flute-of-ezpitzal",
+    "name": "Флейта Эспицаль",
+    "icon": "UI_EquipIcon_Sword_Isikhulu"
+  },
+  {
+    "type": "weapon",
+    "slug": "blackmarrow-lantern",
+    "name": "Фонарь чёрной сердцевины",
+    "icon": "UI_EquipIcon_Catalyst_Ilmarinen"
+  },
+  {
+    "type": "weapon",
+    "slug": "hamayumi",
+    "name": "Хамаюми",
+    "icon": "UI_EquipIcon_Bow_Bakufu"
+  },
+  {
+    "type": "weapon",
+    "slug": "predator",
+    "name": "Хищник",
+    "icon": "UI_EquipIcon_Bow_Predator"
+  },
+  {
+    "type": "weapon",
+    "slug": "mailed-flower",
+    "name": "Цветок в латах",
+    "icon": "UI_EquipIcon_Claymore_Fleurfair"
+  },
+  {
+    "type": "weapon",
+    "slug": "sacrificial-fragments",
+    "name": "Церемониальные мемуары",
+    "icon": "UI_EquipIcon_Catalyst_Fossil"
+  },
+  {
+    "type": "weapon",
+    "slug": "sacrificial-greatsword",
+    "name": "Церемониальный двуручный меч",
+    "icon": "UI_EquipIcon_Claymore_Fossil"
+  },
+  {
+    "type": "weapon",
+    "slug": "sacrificial-bow",
+    "name": "Церемониальный лук",
+    "icon": "UI_EquipIcon_Bow_Fossil"
+  },
+  {
+    "type": "weapon",
+    "slug": "sacrificial-sword",
+    "name": "Церемониальный меч",
+    "icon": "UI_EquipIcon_Sword_Fossil"
+  },
+  {
+    "type": "weapon",
+    "slug": "blackcliff-slasher",
+    "name": "Черногорская бритва",
+    "icon": "UI_EquipIcon_Claymore_Blackrock"
+  },
+  {
+    "type": "weapon",
+    "slug": "blackcliff-pole",
+    "name": "Черногорская пика",
+    "icon": "UI_EquipIcon_Pole_Blackrock"
+  },
+  {
+    "type": "weapon",
+    "slug": "blackcliff-agate",
+    "name": "Черногорский агат",
+    "icon": "UI_EquipIcon_Catalyst_Blackrock"
+  },
+  {
+    "type": "weapon",
+    "slug": "blackcliff-warbow",
+    "name": "Черногорский боевой лук",
+    "icon": "UI_EquipIcon_Bow_Blackrock"
+  },
+  {
+    "type": "weapon",
+    "slug": "blackcliff-longsword",
+    "name": "Черногорский длинный меч",
+    "icon": "UI_EquipIcon_Sword_Blackrock"
+  },
+  {
+    "type": "weapon",
+    "slug": "the-black-sword",
+    "name": "Чёрный меч",
+    "icon": "UI_EquipIcon_Sword_Bloodstained"
+  },
+  {
+    "type": "weapon",
+    "slug": "halberd",
+    "name": "Алебарда Миллелита",
+    "icon": "UI_EquipIcon_Pole_Halberd"
+  },
+  {
+    "type": "weapon",
+    "slug": "white-tassel",
+    "name": "Белая кисть",
+    "icon": "UI_EquipIcon_Pole_Ruby"
+  },
+  {
+    "type": "weapon",
+    "slug": "skyrider-greatsword",
+    "name": "Большой меч небесного всадника",
+    "icon": "UI_EquipIcon_Claymore_Mitsurugi"
+  },
+  {
+    "type": "weapon",
+    "slug": "debate-club",
+    "name": "Дубина переговоров",
+    "icon": "UI_EquipIcon_Claymore_Reasoning"
+  },
+  {
+    "type": "weapon",
+    "slug": "recurve-bow",
+    "name": "Изогнутый лук",
+    "icon": "UI_EquipIcon_Bow_Curve"
+  },
+  {
+    "type": "weapon",
+    "slug": "emerald-orb",
+    "name": "Изумрудный шар",
+    "icon": "UI_EquipIcon_Catalyst_Jade"
+  },
+  {
+    "type": "weapon",
+    "slug": "sharpshooter-s-oath",
+    "name": "Клятва стрелка",
+    "icon": "UI_EquipIcon_Bow_Arjuna"
+  },
+  {
+    "type": "weapon",
+    "slug": "raven-bow",
+    "name": "Лук ворона",
+    "icon": "UI_EquipIcon_Bow_Crowfeather"
+  },
+  {
+    "type": "weapon",
+    "slug": "ferrous-shadow",
+    "name": "Металлическая тень",
+    "icon": "UI_EquipIcon_Claymore_Glaive"
+  },
+  {
+    "type": "weapon",
+    "slug": "bloodtainted-greatsword",
+    "name": "Меч драконьей крови",
+    "icon": "UI_EquipIcon_Claymore_Siegfry"
+  },
+  {
+    "type": "weapon",
+    "slug": "white-iron-greatsword",
+    "name": "Меч из белого железа",
+    "icon": "UI_EquipIcon_Claymore_Tin"
+  },
+  {
+    "type": "weapon",
+    "slug": "skyrider-sword",
+    "name": "Меч небесного всадника",
+    "icon": "UI_EquipIcon_Sword_Mitsurugi"
+  },
+  {
+    "type": "weapon",
+    "slug": "traveler-s-handy-sword",
+    "name": "Меч путешественника",
+    "icon": "UI_EquipIcon_Sword_Traveler"
+  },
+  {
+    "type": "weapon",
+    "slug": "twin-nephrite",
+    "name": "Парный нефрит",
+    "icon": "UI_EquipIcon_Catalyst_Phoney"
+  },
+  {
+    "type": "weapon",
+    "slug": "messenger",
+    "name": "Посыльный",
+    "icon": "UI_EquipIcon_Bow_Msg"
+  },
+  {
+    "type": "weapon",
+    "slug": "otherworldly-story",
+    "name": "Потусторонняя история",
+    "icon": "UI_EquipIcon_Catalyst_Lightnov"
+  },
+  {
+    "type": "weapon",
+    "slug": "harbinger-of-dawn",
+    "name": "Предвестник зари",
+    "icon": "UI_EquipIcon_Sword_Dawn"
+  },
+  {
+    "type": "weapon",
+    "slug": "slingshot",
+    "name": "Рогатка",
+    "icon": "UI_EquipIcon_Bow_Sling"
+  },
+  {
+    "type": "weapon",
+    "slug": "magic-guide",
+    "name": "Руководство по магии",
+    "icon": "UI_EquipIcon_Catalyst_Intro"
+  },
+  {
+    "type": "weapon",
+    "slug": "dark-iron-sword",
+    "name": "Тёмный железный меч",
+    "icon": "UI_EquipIcon_Sword_Darker"
+  },
+  {
+    "type": "weapon",
+    "slug": "fillet-blade",
+    "name": "Филейный нож",
+    "icon": "UI_EquipIcon_Sword_Sashimi"
+  },
+  {
+    "type": "weapon",
+    "slug": "cool-steel",
+    "name": "Холодное лезвие",
+    "icon": "UI_EquipIcon_Sword_Steel"
+  },
+  {
+    "type": "weapon",
+    "slug": "black-tassel",
+    "name": "Чёрная кисть",
+    "icon": "UI_EquipIcon_Pole_Noire"
+  },
+  {
+    "type": "weapon",
+    "slug": "thrilling-tales-of-dragon-slayers",
+    "name": "Эпос о драконоборцах",
+    "icon": "UI_EquipIcon_Catalyst_Pulpfic"
+  },
+  {
+    "type": "artifact",
+    "slug": "archaic-petra",
+    "name": "Архаичный камень",
+    "icon": "UI_RelicIcon_15014_4"
+  },
+  {
+    "type": "artifact",
+    "slug": "scarlet-proof",
+    "name": "Багряное доказательство",
+    "icon": "UI_RelicIcon_15047_4"
+  },
+  {
+    "type": "artifact",
+    "slug": "pale-flame",
+    "name": "Бледный огонь",
+    "icon": "UI_RelicIcon_15018_4"
+  },
+  {
+    "type": "artifact",
+    "slug": "maiden-beloved",
+    "name": "Возлюбленная юная дева",
+    "icon": "UI_RelicIcon_14004_4"
+  },
+  {
+    "type": "artifact",
+    "slug": "deepwood-memories",
+    "name": "Воспоминания дремучего леса",
+    "icon": "UI_RelicIcon_15025_4"
+  },
+  {
+    "type": "artifact",
+    "slug": "shimenawa-s-reminiscence",
+    "name": "Воспоминания Симэнавы",
+    "icon": "UI_RelicIcon_15019_4"
+  },
+  {
+    "type": "artifact",
+    "slug": "retracing-bolide",
+    "name": "Встречная комета",
+    "icon": "UI_RelicIcon_15015_4"
+  },
+  {
+    "type": "artifact",
+    "slug": "crimson-witch-of-flames",
+    "name": "Горящая алая ведьма",
+    "icon": "UI_RelicIcon_15006_4"
+  },
+  {
+    "type": "artifact",
+    "slug": "thundering-fury",
+    "name": "Громогласный рёв ярости",
+    "icon": "UI_RelicIcon_15005_4"
+  },
+  {
+    "type": "artifact",
+    "slug": "celestial-gift",
+    "name": "Дар небес",
+    "icon": "UI_RelicIcon_15045_4"
+  },
+  {
+    "type": "artifact",
+    "slug": "a-day-carved-from-rising-winds",
+    "name": "День восходящих ветров",
+    "icon": "UI_RelicIcon_15044_4"
+  },
+  {
+    "type": "artifact",
+    "slug": "blizzard-strayer",
+    "name": "Заблудший в метели",
+    "icon": "UI_RelicIcon_14001_4"
+  },
+  {
+    "type": "artifact",
+    "slug": "disenchantment-in-deep-shadow",
+    "name": "Застывшее в тени разочарование",
+    "icon": "UI_RelicIcon_15046_4"
+  },
+  {
+    "type": "artifact",
+    "slug": "golden-troupe",
+    "name": "Золотая труппа",
+    "icon": "UI_RelicIcon_15032_4"
+  },
+  {
+    "type": "artifact",
+    "slug": "viridescent-venerer",
+    "name": "Изумрудная тень",
+    "icon": "UI_RelicIcon_15002_4"
+  },
+  {
+    "type": "artifact",
+    "slug": "vermillion-hereafter",
+    "name": "Киноварное загробье",
+    "icon": "UI_RelicIcon_15023_4"
+  },
+  {
+    "type": "artifact",
+    "slug": "long-night-s-oath",
+    "name": "Клятва долгой ночи",
+    "icon": "UI_RelicIcon_15039_4"
+  },
+  {
+    "type": "artifact",
+    "slug": "husk-of-opulent-dreams",
+    "name": "Кокон сладких грёз",
+    "icon": "UI_RelicIcon_15021_4"
+  },
+  {
+    "type": "artifact",
+    "slug": "gladiator-s-finale",
+    "name": "Конец гладиатора",
+    "icon": "UI_RelicIcon_15001_4"
+  },
+  {
+    "type": "artifact",
+    "slug": "ocean-hued-clam",
+    "name": "Моллюск морских красок",
+    "icon": "UI_RelicIcon_15022_4"
+  },
+  {
+    "type": "artifact",
+    "slug": "unfinished-reverie",
+    "name": "Незаконченные грёзы",
+    "icon": "UI_RelicIcon_15036_4"
+  },
+  {
+    "type": "artifact",
+    "slug": "nighttime-whispers-in-the-echoing-woods",
+    "name": "Ночной шёпот в Лесу откликающегося эха",
+    "icon": "UI_RelicIcon_15034_4"
+  },
+  {
+    "type": "artifact",
+    "slug": "night-of-the-sky-s-unveiling",
+    "name": "Ночь открытия неба",
+    "icon": "UI_RelicIcon_15041_4"
+  },
+  {
+    "type": "artifact",
+    "slug": "obsidian-codex",
+    "name": "Обсидиановый фолиант",
+    "icon": "UI_RelicIcon_15038_4"
+  },
+  {
+    "type": "artifact",
+    "slug": "echoes-of-an-offering",
+    "name": "Отголоски подношения",
+    "icon": "UI_RelicIcon_15024_4"
+  },
+  {
+    "type": "artifact",
+    "slug": "marechaussee-hunter",
+    "name": "Охотник Сумеречного двора",
+    "icon": "UI_RelicIcon_15031_4"
+  },
+  {
+    "type": "artifact",
+    "slug": "song-of-days-past",
+    "name": "Песнь былых времён",
+    "icon": "UI_RelicIcon_15033_4"
+  },
+  {
+    "type": "artifact",
+    "slug": "gilded-dreams",
+    "name": "Позолоченные сны",
+    "icon": "UI_RelicIcon_15026_4"
+  },
+  {
+    "type": "artifact",
+    "slug": "aubade-of-morningstar-and-moon",
+    "name": "Рассветная песнь звезды и луны",
+    "icon": "UI_RelicIcon_15043_4"
+  },
+  {
+    "type": "artifact",
+    "slug": "bloodstained-chivalry",
+    "name": "Рыцарь крови",
+    "icon": "UI_RelicIcon_15008_4"
+  },
+  {
+    "type": "artifact",
+    "slug": "scroll-of-the-hero-of-cinder-city",
+    "name": "Свиток героя сожжённого города",
+    "icon": "UI_RelicIcon_15037_4"
+  },
+  {
+    "type": "artifact",
+    "slug": "heart-of-depth",
+    "name": "Сердце глубин",
+    "icon": "UI_RelicIcon_15016_4"
+  },
+  {
+    "type": "artifact",
+    "slug": "heart-of-the-furnace",
+    "name": "Сердце горна",
+    "icon": "UI_RelicIcon_15048_4"
+  },
+  {
+    "type": "artifact",
+    "slug": "silken-moon-s-serenade",
+    "name": "Серенада шёлковой луны",
+    "icon": "UI_RelicIcon_15042_4"
+  },
+  {
+    "type": "artifact",
+    "slug": "vourukasha-s-glow",
+    "name": "Сияние Вурукаши",
+    "icon": "UI_RelicIcon_15030_4"
+  },
+  {
+    "type": "artifact",
+    "slug": "nymph-s-dream",
+    "name": "Сон нимфы",
+    "icon": "UI_RelicIcon_15029_4"
+  },
+  {
+    "type": "artifact",
+    "slug": "tenacity-of-the-millelith",
+    "name": "Стойкость Миллелита",
+    "icon": "UI_RelicIcon_15017_4"
+  },
+  {
+    "type": "artifact",
+    "slug": "wanderer-s-troupe",
+    "name": "Странствующий ансамбль",
+    "icon": "UI_RelicIcon_15003_4"
+  },
+  {
+    "type": "artifact",
+    "slug": "lavawalker",
+    "name": "Ступающий по лаве",
+    "icon": "UI_RelicIcon_14003_4"
+  },
+  {
+    "type": "artifact",
+    "slug": "thundersoother",
+    "name": "Усмиряющий гром",
+    "icon": "UI_RelicIcon_14002_4"
+  },
+  {
+    "type": "artifact",
+    "slug": "finale-of-the-deep-galleries",
+    "name": "Финал галерей глубин",
+    "icon": "UI_RelicIcon_15040_4"
+  },
+  {
+    "type": "artifact",
+    "slug": "fragment-of-harmonic-whimsy",
+    "name": "Фрагмент гармонической фантазии",
+    "icon": "UI_RelicIcon_15035_4"
+  },
+  {
+    "type": "artifact",
+    "slug": "desert-pavilion-chronicle",
+    "name": "Хроники Чертогов в пустыне",
+    "icon": "UI_RelicIcon_15027_4"
+  },
+  {
+    "type": "artifact",
+    "slug": "flower-of-paradise-lost",
+    "name": "Цветок потерянного рая",
+    "icon": "UI_RelicIcon_15028_4"
+  },
+  {
+    "type": "artifact",
+    "slug": "noblesse-oblige",
+    "name": "Церемония древней знати",
+    "icon": "UI_RelicIcon_15007_4"
+  },
+  {
+    "type": "artifact",
+    "slug": "emblem-of-severed-fate",
+    "name": "Эмблема рассечённой судьбы",
+    "icon": "UI_RelicIcon_15020_4"
+  },
+  {
+    "type": "artifact",
+    "slug": "gambler",
+    "name": "Азартный игрок",
+    "icon": "UI_RelicIcon_10008_4"
+  },
+  {
+    "type": "artifact",
+    "slug": "berserker",
+    "name": "Берсерк",
+    "icon": "UI_RelicIcon_10005_4"
+  },
+  {
+    "type": "artifact",
+    "slug": "martial-artist",
+    "name": "Воин",
+    "icon": "UI_RelicIcon_10006_4"
+  },
+  {
+    "type": "artifact",
+    "slug": "defender-s-will",
+    "name": "Воля защитника",
+    "icon": "UI_RelicIcon_10003_4"
+  },
+  {
+    "type": "artifact",
+    "slug": "brave-heart",
+    "name": "Душа храбреца",
+    "icon": "UI_RelicIcon_10002_4"
+  },
+  {
+    "type": "artifact",
+    "slug": "the-exile",
+    "name": "Изгнанник",
+    "icon": "UI_RelicIcon_10009_4"
+  },
+  {
+    "type": "artifact",
+    "slug": "instructor",
+    "name": "Инструктор",
+    "icon": "UI_RelicIcon_10007_4"
+  },
+  {
+    "type": "artifact",
+    "slug": "tiny-miracle",
+    "name": "Маленькое чудо",
+    "icon": "UI_RelicIcon_10004_4"
+  },
+  {
+    "type": "artifact",
+    "slug": "resolution-of-sojourner",
+    "name": "Решимость временщика",
+    "icon": "UI_RelicIcon_10001_4"
+  },
+  {
+    "type": "artifact",
+    "slug": "scholar",
+    "name": "Учёный",
+    "icon": "UI_RelicIcon_10012_4"
+  },
+  {
+    "type": "artifact",
+    "slug": "prayers-for-destiny",
+    "name": "Шаман воды",
+    "icon": "UI_RelicIcon_15010_3"
+  },
+  {
+    "type": "artifact",
+    "slug": "prayers-to-springtime",
+    "name": "Шаман льда",
+    "icon": "UI_RelicIcon_15013_3"
+  },
+  {
+    "type": "artifact",
+    "slug": "prayers-for-wisdom",
+    "name": "Шаман молнии",
+    "icon": "UI_RelicIcon_15011_3"
+  },
+  {
+    "type": "artifact",
+    "slug": "prayers-for-illumination",
+    "name": "Шаман огня",
+    "icon": "UI_RelicIcon_15009_3"
+  }
+]
