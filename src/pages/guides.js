@@ -3,6 +3,7 @@ import '../styles/pages/content.css';
 import { allOption } from '../components/catalog.js';
 import { bindChips, chipGroupHtml, syncChips } from '../components/chips.js';
 import { initLayout } from '../components/layout.js';
+import { mountProposalForm } from '../components/proposal-form.js';
 import { GUIDE_TAGS, GUIDES } from '../data/content/guides.js';
 import { parseQuery, toQuery } from '../lib/url-state.js';
 import { guideCardHtml } from './content-view.js';
@@ -28,3 +29,16 @@ bindChips(filters, (name, value) => {
   render();
 });
 render();
+
+mountProposalForm(document.getElementById('submit-wrap'), {
+  page: 'Гайды',
+  title: 'Предложить гайд или дополнение',
+  intro: 'Поделитесь опытом с сообществом.',
+  categories: [
+    'Новый гайд',
+    'Дополнение к существующему гайду',
+    'Ошибка или устаревшая информация',
+    'Другое',
+  ],
+  itemPlaceholder: 'Название гайда или раздела',
+});

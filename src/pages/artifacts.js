@@ -3,6 +3,7 @@ import { artifactCardHtml, artifactRowHtml } from '../components/cards.js';
 import { initCatalog, rarityOptions, schemaValues } from '../components/catalog.js';
 import { chipGroupHtml } from '../components/chips.js';
 import { initLayout } from '../components/layout.js';
+import { mountProposalForm } from '../components/proposal-form.js';
 import artifacts from '../data/generated/artifacts.json';
 import { filterArtifacts } from '../lib/filters.js';
 
@@ -29,4 +30,18 @@ initCatalog({
   tableHead: ['Сет', 'Редкость', 'Бонусы'],
   gridClass: 'wide-grid',
   viewKey: 'gw_view_artifacts',
+});
+
+mountProposalForm(document.getElementById('submit-wrap'), {
+  page: 'Артефакты',
+  title: 'Предложить информацию об артефактах',
+  intro: 'Есть уточнения по бонусам или рекомендации?',
+  categories: [
+    'Ошибка в бонусах',
+    'Новый сет артефактов',
+    'Рекомендации по использованию',
+    'Лучшие комбинации для персонажа',
+    'Другое',
+  ],
+  itemPlaceholder: 'Название сета (если применимо)',
 });
