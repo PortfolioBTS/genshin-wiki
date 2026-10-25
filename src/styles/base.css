@@ -69,6 +69,10 @@ textarea {
   border-radius: 6px;
 }
 
+[hidden] {
+  display: none !important;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;

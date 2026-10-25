@@ -13,6 +13,7 @@ const PAGES = [
   'guides',
   'patches',
   'banners',
+  'auth',
 ];
 
 export default defineConfig({
