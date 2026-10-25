@@ -9,8 +9,9 @@ export function getCurrentUser() {
   return { name: user.name, email: user.email, joined: user.joined ?? '' };
 }
 
+/** Возвращает false, если браузер не дал сохранить данные. */
 export function setCurrentUser({ name, email, joined }) {
-  writeJson(KEY, { name, email, joined, verified: true });
+  return writeJson(KEY, { name, email, joined, verified: true });
 }
 
 export function clearCurrentUser() {

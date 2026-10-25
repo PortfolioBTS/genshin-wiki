@@ -20,6 +20,9 @@ import { clearCurrentUser, getCurrentUser, setCurrentUser } from '../lib/session
 
 const CODE_TTL_MS = 10 * 60 * 1000;
 const RESEND_DELAY_S = 60;
+const STORAGE_ERROR =
+  'Хранилище браузера недоступно (приватный режим или запрет данных сайта), поэтому демо-аккаунт не сохранить.';
+const GENERIC_ERROR = 'Что-то пошло не так. Попробуйте ещё раз или очистите данные сайта.';
 
 const $ = (id) => document.getElementById(id);
 const card = $('auth-card');
@@ -35,7 +38,7 @@ const timers = {};
 
 const TAB_PANELS = ['login', 'register'];
 
-function showPanel(name) {
+function showPanel(name, { focus = true } = {}) {
   card.querySelectorAll('[data-panel]').forEach((panel) => {
     panel.hidden = panel.dataset.panel !== name;
   });
@@ -45,7 +48,7 @@ function showPanel(name) {
     tab.setAttribute('aria-selected', String(tab.dataset.action === `tab:${name}`));
   });
   if (name === 'profile') renderProfile();
-  card.querySelector(`[data-panel="${name}"] input`)?.focus();
+  if (focus) card.querySelector(`[data-panel="${name}"] input`)?.focus();
 }
 
 function setBanner(id, message, tone = 'info') {
@@ -145,8 +148,12 @@ async function deliverCode(email, name, bannerId) {
   return { code, expires: Date.now() + CODE_TTL_MS };
 }
 
-const verifyCodeInput = mountCode('verify-code-slot', 'verify-code', () => doVerify());
-const resetCodeInput = mountCode('reset-code-slot', 'reset-code', () => doVerifyReset());
+const verifyCodeInput = mountCode('verify-code-slot', 'verify-code', () =>
+  run(doVerify, $('verify-code')),
+);
+const resetCodeInput = mountCode('reset-code-slot', 'reset-code', () =>
+  run(doVerifyReset, $('reset-code')),
+);
 
 function mountCode(slotId, id, onComplete) {
   $(slotId).outerHTML = codeInputHtml(id, 'Шестизначный код');
@@ -217,11 +224,16 @@ async function doRegister() {
 function doVerify() {
   hideBanner('verify-banner');
   if (!pending || !checkCode(verifyCodeInput, verify, 'verify-banner')) return;
+  const joined = new Date().toLocaleDateString('ru-RU');
+  const saved =
+    upsertUser({ ...pending, verified: true, joined }) &&
+    setCurrentUser({ name: pending.name, email: pending.email, joined });
+  if (!saved) {
+    setBanner('verify-banner', STORAGE_ERROR, 'bad');
+    return;
+  }
   clearInterval(timers.verify);
   clearInterval(timers.resend);
-  const joined = new Date().toLocaleDateString('ru-RU');
-  upsertUser({ ...pending, verified: true, joined });
-  setCurrentUser({ name: pending.name, email: pending.email, joined });
   $('success-name').textContent = pending.name;
   pending = null;
   verify = null;
@@ -258,7 +270,10 @@ async function doLogin() {
       await startVerification(current);
       return;
     }
-    setCurrentUser(current);
+    if (!setCurrentUser(current)) {
+      setBanner('login-banner', STORAGE_ERROR, 'bad');
+      return;
+    }
     refreshHeader();
     $('l-pass').value = '';
     showToast(`✓ Вы вошли как ${current.name}`);
@@ -298,9 +313,10 @@ async function doNewPassword() {
     return setBanner('new-pass-banner', 'Пароли не совпадают', 'bad');
   const user = reset?.confirmed && findUser(reset.email);
   if (!user) return setBanner('new-pass-banner', 'Сначала подтвердите код сброса', 'bad');
-  await withBusy($('btn-new-pass'), 'Сохраняем…', async () => {
-    upsertUser({ ...user, ...(await hashPassword(pass)) });
-  });
+  const saved = await withBusy($('btn-new-pass'), 'Сохраняем…', async () =>
+    upsertUser({ ...user, ...(await hashPassword(pass)) }),
+  );
+  if (!saved) return setBanner('new-pass-banner', STORAGE_ERROR, 'bad');
   reset = null;
   ['np-pass', 'np-pass2'].forEach((id) => {
     $(id).value = '';
@@ -337,7 +353,8 @@ function renderProfile() {
     ? proposals
         .slice(0, 5)
         .map((p) => {
-          const text = p.text.length > 60 ? `${p.text.slice(0, 60)}…` : p.text;
+          const full = String(p.text ?? '');
+          const text = full.length > 60 ? `${full.slice(0, 60)}…` : full;
           return `<div class="proposal-item"><span class="proposal-date">${new Date(p.date).toLocaleDateString('ru-RU')}</span><strong>[${escapeHtml(p.page)}]</strong> ${escapeHtml(p.cat)} — ${escapeHtml(text)}</div>`;
         })
         .join('')
@@ -375,8 +392,8 @@ const FORMS = {
 };
 
 const ACTIONS = {
-  tab: showPanel,
-  show: showPanel,
+  tab: (name) => showPanel(name),
+  show: (name) => showPanel(name),
   resend: doResend,
   logout: doLogout,
   'toggle-pass': (inputId, button) => {
@@ -389,16 +406,28 @@ const ACTIONS = {
   },
 };
 
+/** Запускает обработчик и показывает ошибку в баннере его панели вместо тишины. */
+function run(task, origin) {
+  Promise.resolve()
+    .then(task)
+    .catch((error) => {
+      console.error(error);
+      const banner = origin?.closest('[data-panel]')?.querySelector('.status-banner');
+      if (banner) setBanner(banner.id, GENERIC_ERROR, 'bad');
+    });
+}
+
 card.addEventListener('submit', (event) => {
   event.preventDefault();
-  FORMS[event.target.dataset.form]?.();
+  const handler = FORMS[event.target.dataset.form];
+  if (handler) run(handler, event.target);
 });
 
 card.addEventListener('click', (event) => {
   const button = event.target.closest('[data-action]');
   if (!button) return;
   const [name, arg] = button.dataset.action.split(':');
-  ACTIONS[name]?.(arg, button);
+  if (ACTIONS[name]) run(() => ACTIONS[name](arg, button), button);
 });
 
 card.addEventListener('input', (event) => {
@@ -411,4 +440,4 @@ card.addEventListener('change', (event) => {
 });
 
 initLayout();
-showPanel(getCurrentUser() ? 'profile' : 'login');
+showPanel(getCurrentUser() ? 'profile' : 'login', { focus: false });

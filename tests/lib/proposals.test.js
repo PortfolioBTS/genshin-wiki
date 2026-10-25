@@ -36,4 +36,12 @@ describe('proposals', () => {
     addProposal({ user: 'a@b.c', page: 'A', cat: 'c', item: '', text: 't' });
     expect(getProposalsFor('a@b.c')).toHaveLength(1);
   });
+
+  it('ignores malformed records', () => {
+    localStorage.setItem(
+      'gw_proposals',
+      JSON.stringify([null, { user: 5 }, { user: 'a@b.c', text: 't', date: '2026-10-01' }]),
+    );
+    expect(getProposalsFor('a@b.c')).toHaveLength(1);
+  });
 });

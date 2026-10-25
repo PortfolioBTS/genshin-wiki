@@ -2,9 +2,11 @@ import { readJson, writeJson } from './storage.js';
 
 const KEY = 'gw_proposals';
 
+const isProposal = (p) => p !== null && typeof p === 'object' && typeof p.user === 'string';
+
 const readAll = () => {
   const list = readJson(KEY, []);
-  return Array.isArray(list) ? list : [];
+  return Array.isArray(list) ? list.filter(isProposal) : [];
 };
 
 export function addProposal({ user, page, cat, item, text }) {

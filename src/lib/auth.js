@@ -80,13 +80,16 @@ export function passwordStrength(password) {
   return Math.min(checks.filter(Boolean).length, 4);
 }
 
+const isUserRecord = (u) => u !== null && typeof u === 'object' && typeof u.email === 'string';
+
 export function getUsers() {
   const users = readJson(USERS_KEY, []);
-  return Array.isArray(users) ? users : [];
+  return Array.isArray(users) ? users.filter(isUserRecord) : [];
 }
 
+/** Возвращает false, если браузер не дал сохранить данные. */
 export function saveUsers(users) {
-  writeJson(USERS_KEY, users);
+  return writeJson(USERS_KEY, users);
 }
 
 export function findUser(email) {
@@ -95,5 +98,5 @@ export function findUser(email) {
 
 export function upsertUser(user) {
   const users = getUsers().filter((u) => u.email !== user.email);
-  saveUsers([...users, user]);
+  return saveUsers([...users, user]);
 }

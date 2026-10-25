@@ -1,5 +1,5 @@
 // @vitest-environment jsdom
-import { afterEach, describe, expect, it } from 'vitest';
+import { afterEach, describe, expect, it, vi } from 'vitest';
 import {
   PBKDF2_ITERATIONS,
   findUser,
@@ -15,7 +15,10 @@ import {
   verifyPassword,
 } from '../../src/lib/auth.js';
 
-afterEach(() => localStorage.clear());
+afterEach(() => {
+  vi.restoreAllMocks();
+  localStorage.clear();
+});
 
 const SALT = '00'.repeat(16);
 
@@ -129,5 +132,23 @@ describe('user store', () => {
     expect(findUser('none@b.c')).toBeNull();
     saveUsers([]);
     expect(getUsers()).toEqual([]);
+  });
+
+  it('ignores malformed records', () => {
+    localStorage.setItem(
+      'gw_users',
+      JSON.stringify([null, 5, { email: 7 }, { email: 'a@b.c', name: 'A' }]),
+    );
+    expect(getUsers()).toEqual([{ email: 'a@b.c', name: 'A' }]);
+    expect(findUser('a@b.c').name).toBe('A');
+  });
+
+  it('reports whether users could be saved', () => {
+    expect(upsertUser({ email: 'a@b.c', name: 'A', hash: 'h' })).toBe(true);
+    vi.spyOn(Storage.prototype, 'setItem').mockImplementation(() => {
+      throw new Error('blocked');
+    });
+    expect(upsertUser({ email: 'x@y.z', name: 'X', hash: 'h' })).toBe(false);
+    expect(saveUsers([])).toBe(false);
   });
 });

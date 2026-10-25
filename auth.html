@@ -66,7 +66,7 @@
           </button>
         </section>
 
-        <section class="auth-panel" data-panel="register" aria-labelledby="register-title">
+        <section class="auth-panel" hidden data-panel="register" aria-labelledby="register-title">
           <h2 id="register-title">Добро пожаловать!</h2>
           <p class="sub">
             Создайте демо-аккаунт. Мы отправим 6-значный код для подтверждения почты.
@@ -144,7 +144,7 @@
           <button class="btn-secondary" type="button" data-action="tab:login">Войти</button>
         </section>
 
-        <section class="auth-panel" data-panel="verify" aria-labelledby="verify-title">
+        <section class="auth-panel" hidden data-panel="verify" aria-labelledby="verify-title">
           <h2 id="verify-title">Подтверждение почты</h2>
           <p class="sub">
             Код отправлен на <strong id="verify-email"></strong>. Он действует
@@ -166,7 +166,7 @@
           </button>
         </section>
 
-        <section class="auth-panel" data-panel="forgot" aria-labelledby="forgot-title">
+        <section class="auth-panel" hidden data-panel="forgot" aria-labelledby="forgot-title">
           <h2 id="forgot-title">Восстановление пароля</h2>
           <p class="sub">Введите почту — мы отправим 6-значный код для сброса пароля.</p>
           <div class="status-banner" id="forgot-banner" role="status"></div>
@@ -188,7 +188,7 @@
           </button>
         </section>
 
-        <section class="auth-panel" data-panel="reset-code" aria-labelledby="reset-title">
+        <section class="auth-panel" hidden data-panel="reset-code" aria-labelledby="reset-title">
           <h2 id="reset-title">Введите код</h2>
           <p class="sub">
             Код отправлен на <strong id="reset-email"></strong>. Он действует
@@ -202,7 +202,7 @@
           <button class="btn-secondary" type="button" data-action="show:forgot">← Назад</button>
         </section>
 
-        <section class="auth-panel" data-panel="new-pass" aria-labelledby="new-pass-title">
+        <section class="auth-panel" hidden data-panel="new-pass" aria-labelledby="new-pass-title">
           <h2 id="new-pass-title">Новый пароль</h2>
           <p class="sub">Придумайте новый пароль для аккаунта.</p>
           <div class="status-banner" id="new-pass-banner" role="status"></div>
@@ -251,6 +251,7 @@
 
         <section
           class="auth-panel success-screen"
+          hidden
           data-panel="success"
           aria-labelledby="success-title"
         >
@@ -266,7 +267,12 @@
           </button>
         </section>
 
-        <section class="auth-panel profile-screen" data-panel="profile" aria-labelledby="p-name">
+        <section
+          class="auth-panel profile-screen"
+          hidden
+          data-panel="profile"
+          aria-labelledby="p-name"
+        >
           <div class="profile-avatar" id="p-avatar" aria-hidden="true"></div>
           <h2 class="profile-name" id="p-name"></h2>
           <p class="profile-email" id="p-email"></p>
