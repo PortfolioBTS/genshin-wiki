@@ -1,103 +1,51 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Персонажи — Genshin Wiki</title>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-  <script src="emailjs-config.js"></script>
-</head>
-
-<body>
-  <header>
-    <a class="logo" href="index.html"><span class="logo-star">✦</span> Genshin Wiki</a>
-    <nav>
-      <a href="index.html">Главная</a>
-      <a href="characters.html" class="active">Персонажи</a>
-      <a href="weapons.html">Оружие</a>
-      <a href="artifacts.html">Артефакты</a>
-      <a href="regions.html">Регионы</a>
-      <a href="guides.html">Гайды</a>
-      <a href="patches.html">Патчноуты</a>
-      <a href="banners.html">Баннеры</a>
-    </nav>
-    <a class="btn-reg" href="auth.html" id="auth-btn">Войти / Регистрация</a>
-  </header>
-
-  <main>
-    <div class="page-hero">
-      <h1>⚔️ Персонажи</h1>
-      <p>Все играбельные герои Тейвата — фильтрация по элементу, редкости и оружию</p>
-    </div>
-
-    <div class="filter-bar">
-      <span class="filter-label">Элемент:</span>
-      <button class="filter-btn active" onclick="setEl('all',this)">Все</button>
-      <button class="filter-btn" onclick="setEl('pyro',this)">🔥 Пиро</button>
-      <button class="filter-btn" onclick="setEl('hydro',this)">💧 Гидро</button>
-      <button class="filter-btn" onclick="setEl('anemo',this)">🌬️ Анемо</button>
-      <button class="filter-btn" onclick="setEl('electro',this)">⚡ Электро</button>
-      <button class="filter-btn" onclick="setEl('cryo',this)">❄️ Крио</button>
-      <button class="filter-btn" onclick="setEl('geo',this)">⛰️ Гео</button>
-      <button class="filter-btn" onclick="setEl('dendro',this)">🌿 Дендро</button>
-      <input class="search-input" id="char-search" placeholder="🔍 Поиск..." oninput="applyFilter()">
-    </div>
-
-    <div class="cards-container">
-      <div class="cards-grid" id="chars-grid"></div>
-
-      <div class="table-section-title">Таблица персонажей</div>
-      <div class="table-wrap">
-        <table class="data-table">
-          <thead>
-            <tr>
-              <th>Персонаж</th>
-              <th>Редкость</th>
-              <th>Элемент</th>
-              <th>Оружие</th>
-              <th>Регион</th>
-              <th>Роль</th>
-              <th>Описание</th>
-            </tr>
-          </thead>
-          <tbody id="chars-tbody"></tbody>
-        </table>
+  <head>
+    <!-- include:head -->
+    <title>Персонажи — Genshin Wiki</title>
+    <meta
+      name="description"
+      content="Все играбельные персонажи Genshin Impact с фильтрами по стихии, редкости, оружию и региону."
+    />
+  </head>
+  <body>
+    <!-- include:header -->
+    <main id="main">
+      <div class="page-hero">
+        <h1>⚔️ Персонажи</h1>
+        <p>Все играбельные герои Тейвата — фильтры по стихии, редкости, оружию и региону</p>
       </div>
-    </div>
-
-    <div class="submit-panel" id="submit-wrap"></div>
-  </main>
-
-  <footer>
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <a class="logo" href="index.html"><span class="logo-star">✦</span>&nbsp;Genshin Wiki</a>
-        <p style="margin-top:9px;">Неофициальная энциклопедия. © HoYoverse / miHoYo.</p>
+      <div class="filter-bar">
+        <div class="filter-groups" id="filter-groups"></div>
+        <div class="filter-tools">
+          <label class="visually-hidden" for="q">Поиск персонажа</label>
+          <input
+            class="search-input"
+            id="q"
+            type="search"
+            placeholder="Имя, титул, регион…"
+            autocomplete="off"
+          />
+          <label class="filter-group">
+            <span class="filter-label">Сортировка</span>
+            <select class="select-input" data-filter="sort">
+              <option value="name">По имени</option>
+              <option value="new">Сначала новые</option>
+            </select>
+          </label>
+          <div class="view-toggle" role="group" aria-label="Вид списка">
+            <button type="button" data-view="cards">Карточки</button>
+            <button type="button" data-view="table">Таблица</button>
+          </div>
+        </div>
       </div>
-      <div class="footer-col">
-        <h5>Разделы</h5>
-        <a href="characters.html">Персонажи</a><a href="weapons.html">Оружие</a><a href="artifacts.html">Артефакты</a>
+      <div class="cards-container">
+        <p class="result-count" id="result-count" aria-live="polite"></p>
+        <div id="results"></div>
       </div>
-      <div class="footer-col">
-        <h5>Мир</h5>
-        <a href="regions.html">Регионы</a><a href="guides.html">Гайды</a><a href="patches.html">Патчноуты</a>
-      </div>
-      <div class="footer-col">
-        <h5>Аккаунт</h5>
-        <a href="auth.html">Войти</a><a href="auth.html">Регистрация</a><a href="banners.html">Баннеры</a>
-      </div>
-    </div>
-    <div class="footer-bottom">© 2025 Genshin Wiki — Fan Project &nbsp;|&nbsp; Genshin Impact © HoYoverse</div>
-  </footer>
-
-  <div class="toast" id="toast"></div>
-  <script src="data.js"></script>
-  <script src="characters.js"></script>
-</body>
-
+      <section class="submit-panel" id="submit-wrap"></section>
+    </main>
+    <!-- include:footer -->
+    <script type="module" src="/src/pages/characters.js"></script>
+  </body>
 </html>

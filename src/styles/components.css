@@ -639,3 +639,26 @@ a.card:hover,
     grid-template-columns: minmax(0, 1fr);
   }
 }
+
+.filter-groups {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px 18px;
+}
+
+.row-name {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+}
+
+.data-table .stars {
+  white-space: nowrap;
+}
+
+.data-table .bonus-list li {
+  padding: 3px 0;
+  border: 0;
+}
