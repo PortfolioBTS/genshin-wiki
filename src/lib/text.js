@@ -12,3 +12,10 @@ export function matchesQuery(query, ...fields) {
   if (!q) return true;
   return fields.some((field) => normalize(field).includes(q));
 }
+
+/** '2026-09-23' → '23.09.2026'. */
+export function formatDate(iso) {
+  if (!iso) return '';
+  const [year, month, day] = iso.split('-');
+  return `${day}.${month}.${year}`;
+}

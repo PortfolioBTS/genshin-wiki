@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { matchesQuery, normalize } from '../../src/lib/text.js';
+import { formatDate, matchesQuery, normalize } from '../../src/lib/text.js';
 
 describe('normalize', () => {
   it('lowercases, maps ё to е, trims and collapses spaces', () => {
@@ -25,5 +25,15 @@ describe('matchesQuery', () => {
   it('treats an empty query as a match', () => {
     expect(matchesQuery('', 'x')).toBe(true);
     expect(matchesQuery('   ', 'x')).toBe(true);
+  });
+});
+
+describe('formatDate', () => {
+  it('turns an ISO date into DD.MM.YYYY', () => {
+    expect(formatDate('2026-09-23')).toBe('23.09.2026');
+  });
+
+  it('returns an empty string for a missing date', () => {
+    expect(formatDate(null)).toBe('');
   });
 });

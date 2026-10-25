@@ -94,6 +94,7 @@ write('meta.json', {
   source: 'genshin-db',
   sourceVersion,
   latestVersion: latestVersion(characters.map((c) => c.version)),
+  counts: { characters: characters.length, weapons: weapons.length, artifacts: artifacts.length },
 });
 
 console.log(

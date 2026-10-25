@@ -1,5 +1,10 @@
 {
   "source": "genshin-db",
   "sourceVersion": "5.2.14",
-  "latestVersion": "7.1"
+  "latestVersion": "7.1",
+  "counts": {
+    "characters": 121,
+    "weapons": 243,
+    "artifacts": 60
+  }
 }
