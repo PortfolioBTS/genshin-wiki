@@ -1,6 +1,7 @@
 import { DATA_AS_OF } from '../data/content/site.js';
 import { getCurrentUser } from '../lib/session.js';
 import { installImageFallbacks } from './game-image.js';
+import { initSearch } from './search.js';
 
 function setMenu(toggle, open) {
   document.body.classList.toggle('nav-open', open);
@@ -37,4 +38,8 @@ export function initLayout() {
     el.textContent = DATA_AS_OF;
   });
   installImageFallbacks();
+
+  const search = document.getElementById('site-search');
+  const results = document.getElementById('site-search-results');
+  if (search && results) initSearch(search, results);
 }
