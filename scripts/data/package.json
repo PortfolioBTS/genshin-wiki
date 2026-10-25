@@ -1,0 +1,9 @@
+{
+  "name": "genshin-wiki-data",
+  "private": true,
+  "description": "Зависимости скрипта генерации данных (не входят в основную сборку сайта)",
+  "type": "module",
+  "dependencies": {
+    "genshin-db": "5.2.14"
+  }
+}

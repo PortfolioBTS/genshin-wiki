@@ -1,0 +1,43 @@
+<a class="skip-link" href="#main">Перейти к содержимому</a>
+<header class="site-header">
+  <a class="logo" href="index.html"
+    ><span class="logo-star" aria-hidden="true">✦</span> Genshin Wiki</a
+  >
+  <button
+    id="nav-toggle"
+    class="nav-toggle"
+    type="button"
+    aria-expanded="false"
+    aria-controls="site-nav"
+    aria-label="Меню"
+  >
+    <span class="nav-toggle-bar" aria-hidden="true"></span>
+  </button>
+  <div class="header-panel" id="site-nav">
+    <nav class="site-nav" aria-label="Разделы">
+      <a href="index.html" data-nav="index.html">Главная</a>
+      <a href="characters.html" data-nav="characters.html">Персонажи</a>
+      <a href="weapons.html" data-nav="weapons.html">Оружие</a>
+      <a href="artifacts.html" data-nav="artifacts.html">Артефакты</a>
+      <a href="regions.html" data-nav="regions.html">Регионы</a>
+      <a href="guides.html" data-nav="guides.html">Гайды</a>
+      <a href="patches.html" data-nav="patches.html">Патчноуты</a>
+      <a href="banners.html" data-nav="banners.html">Баннеры</a>
+    </nav>
+    <div class="site-search" role="search">
+      <label class="visually-hidden" for="site-search">Поиск по вики</label>
+      <input
+        id="site-search"
+        type="search"
+        placeholder="Поиск…"
+        autocomplete="off"
+        role="combobox"
+        aria-expanded="false"
+        aria-controls="site-search-results"
+        aria-autocomplete="list"
+      />
+      <ul id="site-search-results" class="search-results" role="listbox" hidden></ul>
+    </div>
+    <a class="btn-reg" href="auth.html" id="auth-btn" data-nav="auth.html">Войти</a>
+  </div>
+</header>

@@ -1,0 +1,324 @@
+/* Регионы, гайды, патчноуты и баннеры. */
+
+.mini-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.mini-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 4px 12px 4px 4px;
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  background: var(--bg-panel);
+  font-size: 0.8rem;
+  color: var(--text-main);
+  text-decoration: none;
+}
+
+a.mini-chip:hover {
+  border-color: var(--el, var(--accent));
+}
+
+.mini-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+  font-size: 0.8rem;
+}
+
+.sub-list {
+  margin-top: 14px;
+}
+
+.sub-list h3 {
+  margin-bottom: 8px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--text-dim);
+}
+
+/* ── Регионы ── */
+.regions-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 18px;
+}
+
+.region-card {
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: var(--bg-card);
+}
+
+.region-top {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 20px;
+  background: linear-gradient(
+    135deg,
+    color-mix(in srgb, var(--el) 16%, var(--bg-card)),
+    var(--bg-card)
+  );
+}
+
+.region-emoji {
+  font-size: 2.3rem;
+}
+
+.region-top h2 {
+  margin-bottom: 4px;
+  font-family: 'Cinzel', serif;
+  font-size: 1.05rem;
+}
+
+.region-nation {
+  font-size: 0.76rem;
+  color: var(--text-sub);
+}
+
+.region-body {
+  padding: 16px 20px 20px;
+  font-size: 0.82rem;
+  line-height: 1.65;
+  color: var(--text-sub);
+}
+
+.region-archon {
+  margin-bottom: 6px;
+  color: var(--text-main);
+}
+
+.region-archon span {
+  color: var(--text-dim);
+}
+
+.r-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin: 12px 0;
+}
+
+.region-link {
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* ── Гайды ── */
+.guides-list {
+  display: grid;
+  gap: 12px;
+}
+
+.guide-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  padding: 18px 22px;
+  border: 1px solid var(--border);
+  border-radius: 13px;
+  background: var(--bg-card);
+}
+
+.guide-num {
+  min-width: 30px;
+  font-family: 'Cinzel', serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--accent2);
+}
+
+.guide-card h2 {
+  margin-bottom: 5px;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.guide-card p {
+  font-size: 0.82rem;
+  line-height: 1.6;
+  color: var(--text-sub);
+}
+
+.guide-tag {
+  flex-shrink: 0;
+  align-self: center;
+  margin-left: auto;
+  padding: 3px 11px;
+  border: 1px solid color-mix(in srgb, var(--accent) 40%, transparent);
+  border-radius: 20px;
+  background: var(--accent-glow);
+  font-size: 0.7rem;
+  font-weight: 600;
+  white-space: nowrap;
+  color: var(--accent);
+}
+
+/* ── Патчноуты ── */
+.patches-list {
+  display: grid;
+  gap: 16px;
+}
+
+.patch-card {
+  padding: 22px 24px;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: var(--bg-card);
+}
+
+.patch-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 6px 14px;
+  margin-bottom: 12px;
+}
+
+.patch-version {
+  font-family: 'Cinzel', serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.patch-title {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.patch-date {
+  margin-left: auto;
+  font-size: 0.78rem;
+  color: var(--text-dim);
+}
+
+.patch-points {
+  list-style: none;
+}
+
+.patch-points li {
+  position: relative;
+  padding: 6px 0 6px 16px;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.84rem;
+  line-height: 1.55;
+  color: var(--text-sub);
+}
+
+.patch-points li:last-child {
+  border-bottom: 0;
+}
+
+.patch-points li::before {
+  content: '›';
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+}
+
+/* ── Баннеры ── */
+.banners-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 14px;
+}
+
+.banner-card {
+  padding: 18px 20px;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: linear-gradient(135deg, #0e1528, #10112a);
+}
+
+.banner-card > h3 {
+  font-family: 'Cinzel', serif;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.b-type {
+  margin-bottom: 4px;
+  font-size: 0.7rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+.banner-dates {
+  margin-top: 14px;
+  font-size: 0.78rem;
+  color: var(--text-sub);
+}
+
+.pity-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 12px;
+}
+
+.pity-item {
+  padding: 14px 16px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background: var(--bg-card);
+}
+
+.p-label {
+  margin-bottom: 5px;
+  font-size: 0.68rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--text-dim);
+}
+
+.p-val {
+  font-family: 'Cinzel', serif;
+  font-size: 1.55rem;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--accent);
+}
+
+.p-sub {
+  margin-top: 6px;
+  font-size: 0.76rem;
+  line-height: 1.45;
+  color: var(--text-sub);
+}
+
+.as-of {
+  margin-top: 24px;
+  font-size: 0.78rem;
+  color: var(--text-dim);
+}
+
+@media (max-width: 600px) {
+  .guide-card {
+    flex-wrap: wrap;
+    padding: 16px;
+  }
+
+  .guide-tag {
+    margin-left: 46px;
+  }
+
+  .patch-date {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .regions-grid,
+  .banners-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

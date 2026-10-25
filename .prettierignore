@@ -1,0 +1,8 @@
+dist/
+node_modules/
+scripts/data/node_modules/
+src/data/generated/
+.superpowers/
+docs/superpowers/
+package-lock.json
+scripts/data/package-lock.json

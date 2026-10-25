@@ -1,0 +1,257 @@
+.muted {
+  color: var(--text-sub);
+  font-size: 0.85rem;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 18px;
+  font-size: 0.82rem;
+  text-decoration: none;
+}
+
+.char-page {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.char-hero {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  gap: 28px;
+  align-items: center;
+  padding: 28px;
+  border: 1px solid color-mix(in srgb, var(--el) 35%, var(--border));
+  border-radius: 18px;
+  background: linear-gradient(
+    120deg,
+    color-mix(in srgb, var(--el) 16%, var(--bg-card)),
+    var(--bg-card) 70%
+  );
+}
+
+.char-portrait {
+  position: relative;
+  z-index: 1;
+  flex-shrink: 0;
+}
+
+.char-icon {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: linear-gradient(
+    150deg,
+    color-mix(in srgb, var(--rarity) 55%, var(--bg-panel)),
+    var(--bg-panel)
+  );
+  font-size: 3.4rem;
+}
+
+.char-info {
+  position: relative;
+  z-index: 1;
+  flex: 1;
+  min-width: 0;
+}
+
+.char-title {
+  font-size: 0.78rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--el);
+}
+
+.char-info h1 {
+  margin: 4px 0 10px;
+  font-family: 'Cinzel', serif;
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+}
+
+.char-tags {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 18px;
+}
+
+.char-tags .tag {
+  font-size: 0.72rem;
+  padding: 3px 10px;
+}
+
+.char-facts {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+  gap: 10px 18px;
+}
+
+.char-facts dt {
+  font-size: 0.68rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--text-dim);
+}
+
+.char-facts dd {
+  font-size: 0.88rem;
+}
+
+.char-splash-wrap {
+  position: absolute;
+  inset: 0 0 0 auto;
+  width: 50%;
+  pointer-events: none;
+  mask-image: linear-gradient(90deg, transparent, #000 45%);
+}
+
+.char-splash {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 20%;
+  opacity: 0.35;
+}
+
+.char-splash-wrap .img-ph {
+  display: none;
+}
+
+.char-section {
+  margin-top: 34px;
+}
+
+.char-section h2 {
+  margin-bottom: 14px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--border);
+  font-family: 'Cinzel', serif;
+  font-size: 1.15rem;
+}
+
+.char-desc {
+  white-space: pre-line;
+  line-height: 1.7;
+  color: var(--text-sub);
+}
+
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 14px;
+}
+
+.tabs [role='tab'] {
+  padding: 7px 14px;
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  background: transparent;
+  font-size: 0.8rem;
+  color: var(--text-sub);
+  cursor: pointer;
+}
+
+.tabs [role='tab'][aria-selected='true'] {
+  border-color: var(--el);
+  background: color-mix(in srgb, var(--el) 14%, transparent);
+  color: var(--text-main);
+}
+
+[role='tabpanel'] {
+  padding: 20px 22px;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: var(--bg-card);
+  font-size: 0.86rem;
+  line-height: 1.7;
+  color: var(--text-sub);
+}
+
+.talent-kind {
+  font-size: 0.68rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--el);
+}
+
+[role='tabpanel'] h3 {
+  margin-bottom: 8px;
+  font-family: 'Cinzel', serif;
+  font-size: 1rem;
+  color: var(--text-main);
+}
+
+.cons-list {
+  display: grid;
+  gap: 12px;
+  list-style: none;
+}
+
+.cons-list li {
+  display: flex;
+  gap: 16px;
+  padding: 16px 18px;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: var(--bg-card);
+  font-size: 0.84rem;
+  line-height: 1.65;
+  color: var(--text-sub);
+}
+
+.cons-level {
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid color-mix(in srgb, var(--el) 45%, var(--border));
+  border-radius: 50%;
+  font-family: 'Cinzel', serif;
+  font-weight: 700;
+  color: var(--el);
+}
+
+.cons-list h3 {
+  margin-bottom: 4px;
+  font-size: 0.92rem;
+  color: var(--text-main);
+}
+
+.data-table .num {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+.empty-state h1 {
+  margin-bottom: 8px;
+  font-family: 'Cinzel', serif;
+  font-size: 1.4rem;
+  color: var(--text-main);
+}
+
+@media (max-width: 700px) {
+  .char-hero {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  .char-icon {
+    width: 112px;
+    height: 112px;
+  }
+
+  .char-splash-wrap {
+    width: 100%;
+    mask-image: linear-gradient(180deg, transparent, #000 60%);
+  }
+
+  .cons-list li {
+    padding: 14px;
+  }
+}

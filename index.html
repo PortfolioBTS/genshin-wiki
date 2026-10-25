@@ -1,157 +1,99 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
+  <head>
+    <!-- include:head -->
+    <title>Genshin Wiki — энциклопедия Тейвата</title>
+    <meta
+      name="description"
+      content="Неофициальная фан-энциклопедия по Genshin Impact: персонажи, оружие, артефакты, регионы, патчноуты и баннеры."
+    />
+  </head>
+  <body>
+    <!-- include:header -->
+    <main id="main">
+      <section class="hero">
+        <p class="hero-eyebrow">Добро пожаловать в Тейват</p>
+        <h1>Genshin Wiki</h1>
+        <p class="hero-sub">
+          Фан-энциклопедия по Genshin Impact: персонажи, оружие, артефакты, регионы и актуальные
+          события. Данные взяты из официальной локализации игры.
+        </p>
+        <dl class="hero-stats" id="hero-stats"></dl>
+      </section>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Genshin Wiki — Энциклопедия Тейвата</title>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="index.css">
-  
-  
-</head>
+      <section class="news-banner" id="news" aria-label="Последнее обновление"></section>
 
-<body>
+      <section class="home-section" id="new-in-version" aria-labelledby="new-title"></section>
 
-  <header>
-    <a class="logo" href="index.html"><span class="logo-star">✦</span> Genshin Wiki</a>
-    <nav>
-      <a href="index.html" class="active">Главная</a>
-      <a href="characters.html">Персонажи</a>
-      <a href="weapons.html">Оружие</a>
-      <a href="artifacts.html">Артефакты</a>
-      <a href="regions.html">Регионы</a>
-      <a href="guides.html">Гайды</a>
-      <a href="patches.html">Патчноуты</a>
-      <a href="banners.html">Баннеры</a>
-    </nav>
-    <a class="btn-reg" href="auth.html" id="auth-btn">Войти / Регистрация</a>
-  </header>
-
-  <main>
-    <div class="hero">
-      <div class="hero-eyebrow">Добро пожаловать в Тейват</div>
-      <h1>Genshin Wiki</h1>
-      <p class="hero-sub">Полная энциклопедия по Genshin Impact — персонажи, оружие, артефакты, регионы, гайды и
-        актуальные события.</p>
-      <div class="hero-stats">
-        <div class="hero-stat"><span>101</span><small>Персонаж</small></div>
-        <div class="hero-stat"><span>7</span><small>Элементов</small></div>
-        <div class="hero-stat"><span>7</span><small>Регионов</small></div>
-        <div class="hero-stat"><span>50+</span><small>Артефактов</small></div>
-      </div>
-    </div>
-
-    <div class="news-banner">
-      <span class="news-badge">ВЕРСИЯ 5.7</span>
-      <p>Добавлены персонажи <strong>Скирк (Крио / Меч)</strong> и <strong>Далия (Гидро / Меч)</strong>. Число
-        играбельных героев достигло <strong>101</strong>. Новый регион в Натлане — Высота Ойпаро.</p>
-    </div>
-
-    <p class="sections-title">Разделы энциклопедии</p>
-    <div class="sections-grid">
-      <a class="section-card" href="characters.html">
-        <div class="card-icon">⚔️</div>
-        <h3>Персонажи</h3>
-        <p>Все 101 герой Тейвата с карточками, фильтрами по элементу, таблицами характеристик и лором.</p>
-      </a>
-      <a class="section-card" href="weapons.html">
-        <div class="card-icon">🗡️</div>
-        <h3>Оружие</h3>
-        <p>Полная база мечей, луков, копий, двуручников и каталистов с пассивными способностями.</p>
-      </a>
-      <a class="section-card" href="artifacts.html">
-        <div class="card-icon">💎</div>
-        <h3>Артефакты</h3>
-        <p>Все сеты с бонусами за 2 и 4 предмета — рекомендации для DPS, саппортов и хилеров.</p>
-      </a>
-      <a class="section-card" href="regions.html">
-        <div class="card-icon">🗺️</div>
-        <h3>Регионы</h3>
-        <p>Все семь наций Тейвата — стихия, архонт, особенности и вдохновение каждой нации.</p>
-      </a>
-      <a class="section-card" href="guides.html">
-        <div class="card-icon">📖</div>
-        <h3>Гайды</h3>
-        <p>Руководства от первых шагов до прохождения 12 этажа Спирального Утёса на 36 звёзд.</p>
-      </a>
-      <a class="section-card" href="patches.html">
-        <div class="card-icon">📜</div>
-        <h3>Патчноуты</h3>
-        <p>История всех обновлений — новые персонажи, баланс, события и исправления.</p>
-      </a>
-      <a class="section-card" href="banners.html">
-        <div class="card-icon">🌟</div>
-        <h3>Баннеры и события</h3>
-        <p>Актуальные и предстоящие баннеры персонажей и оружия, система питти, текущие события.</p>
-      </a>
-      <a class="section-card" href="auth.html">
-        <div class="card-icon">👤</div>
-        <h3>Аккаунт</h3>
-        <p>Зарегистрируйтесь, чтобы предлагать правки и дополнения вики. Помогите сообществу!</p>
-      </a>
-    </div>
-
-    <div class="about-section">
-      <div class="about-card">
-        <div>
-          <h2>О Genshin Wiki</h2>
-          <p>Genshin Wiki — неофициальная фан-энциклопедия по игре Genshin Impact от студии HoYoverse. Здесь собрана
-            актуальная информация о всех аспектах игры: персонажах, оружии, артефактах, регионах и обновлениях.</p>
-          <br>
-          <p>Сайт создан сообществом для сообщества. Зарегистрированные пользователи могут предлагать правки и
-            дополнения через форму на каждой странице. Все материалы основаны на открытых данных.</p>
-          <br>
-          <p style="font-size:.75rem;color:var(--text-dim);">Genshin Impact © HoYoverse / miHoYo. Genshin Wiki не
-            является официальным ресурсом и не аффилирован с HoYoverse.</p>
+      <section class="home-section" aria-labelledby="sections-title">
+        <h2 class="sections-title" id="sections-title">Разделы энциклопедии</h2>
+        <div class="sections-grid">
+          <a class="section-card" href="characters.html">
+            <div class="card-icon" aria-hidden="true">⚔️</div>
+            <h3>Персонажи</h3>
+            <p>Все играбельные герои с фильтрами по стихии, редкости, оружию и региону.</p>
+          </a>
+          <a class="section-card" href="weapons.html">
+            <div class="card-icon" aria-hidden="true">🗡️</div>
+            <h3>Оружие</h3>
+            <p>Мечи, двуручники, копья, луки и катализаторы с характеристиками и пассивками.</p>
+          </a>
+          <a class="section-card" href="artifacts.html">
+            <div class="card-icon" aria-hidden="true">💎</div>
+            <h3>Артефакты</h3>
+            <p>Сеты артефактов с бонусами за 2 и 4 предмета.</p>
+          </a>
+          <a class="section-card" href="regions.html">
+            <div class="card-icon" aria-hidden="true">🗺️</div>
+            <h3>Регионы</h3>
+            <p>Нации Тейвата и Нод-Край: стихия, архонт и персонажи каждого региона.</p>
+          </a>
+          <a class="section-card" href="guides.html">
+            <div class="card-icon" aria-hidden="true">📖</div>
+            <h3>Гайды</h3>
+            <p>От первых шагов до Витой бездны и Театра «Воображариум».</p>
+          </a>
+          <a class="section-card" href="patches.html">
+            <div class="card-icon" aria-hidden="true">📜</div>
+            <h3>Патчноуты</h3>
+            <p>Версии 6.0–7.1: главное в каждом обновлении и новые персонажи.</p>
+          </a>
+          <a class="section-card" href="banners.html">
+            <div class="card-icon" aria-hidden="true">🌟</div>
+            <h3>Баннеры</h3>
+            <p>Текущие и ближайшие молитвы, а также как работает гарантия.</p>
+          </a>
+          <a class="section-card" href="auth.html">
+            <div class="card-icon" aria-hidden="true">👤</div>
+            <h3>Аккаунт (демо)</h3>
+            <p>Демо-регистрация, чтобы попробовать форму предложения правок.</p>
+          </a>
         </div>
-        <div class="about-divider"></div>
-        <div>
-          <h2>Стихии Тейвата</h2>
-          <p>В мире Тейвата существует 7 стихий — каждый персонаж владеет одной из них. Нажми на стихию, чтобы увидеть
-            всех связанных персонажей.</p>
-          <div class="elem-list">
-            <a class="elem-chip" href="characters.html?el=pyro">🔥 Пиро</a>
-            <a class="elem-chip" href="characters.html?el=hydro">💧 Гидро</a>
-            <a class="elem-chip" href="characters.html?el=anemo">🌬️ Анемо</a>
-            <a class="elem-chip" href="characters.html?el=electro">⚡ Электро</a>
-            <a class="elem-chip" href="characters.html?el=cryo">❄️ Крио</a>
-            <a class="elem-chip" href="characters.html?el=geo">⛰️ Гео</a>
-            <a class="elem-chip" href="characters.html?el=dendro">🌿 Дендро</a>
+      </section>
+
+      <section class="about-section">
+        <div class="about-card">
+          <div>
+            <h2>О проекте</h2>
+            <p>
+              Genshin Wiki — неофициальный фан-проект по игре Genshin Impact от HoYoverse. Данные о
+              персонажах, оружии и артефактах генерируются из пакета genshin-db с официальной
+              русской локализацией, а патчи и баннеры сверены с открытыми источниками.
+            </p>
+            <p class="about-note">
+              Genshin Impact © HoYoverse. Сайт не является официальным ресурсом и не аффилирован с
+              HoYoverse.
+            </p>
+          </div>
+          <div>
+            <h2>Стихии Тейвата</h2>
+            <p>Выберите стихию, чтобы увидеть её персонажей.</p>
+            <div class="elem-list" id="elem-list"></div>
           </div>
         </div>
-      </div>
-    </div>
-  </main>
-
-  <footer>
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <a class="logo" href="index.html"><span class="logo-star">✦</span>&nbsp;Genshin Wiki</a>
-        <p style="margin-top:9px;">Неофициальная энциклопедия по Genshin Impact.<br>Не аффилирован с HoYoverse. ©
-          HoYoverse / miHoYo.</p>
-      </div>
-      <div class="footer-col">
-        <h5>Разделы</h5>
-        <a href="characters.html">Персонажи</a><a href="weapons.html">Оружие</a><a href="artifacts.html">Артефакты</a>
-      </div>
-      <div class="footer-col">
-        <h5>Мир</h5>
-        <a href="regions.html">Регионы</a><a href="guides.html">Гайды</a><a href="patches.html">Патчноуты</a>
-      </div>
-      <div class="footer-col">
-        <h5>Аккаунт</h5>
-        <a href="auth.html">Войти</a><a href="auth.html">Регистрация</a><a href="banners.html">Баннеры</a>
-      </div>
-    </div>
-    <div class="footer-bottom">© 2025 Genshin Wiki — Fan Project &nbsp;|&nbsp; Genshin Impact © HoYoverse</div>
-  </footer>
-
-  <script src="data.js"></script>
-  <script src="index.js"></script>
-</body>
-
+      </section>
+    </main>
+    <!-- include:footer -->
+    <script type="module" src="/src/pages/home.js"></script>
+  </body>
 </html>

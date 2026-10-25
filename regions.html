@@ -1,58 +1,25 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
-<head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Регионы — Genshin Wiki</title>
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="regions.css">
-</head>
-<body>
-<header>
-  <a class="logo" href="index.html"><span class="logo-star">✦</span> Genshin Wiki</a>
-  <nav>
-    <a href="index.html">Главная</a>
-    <a href="characters.html">Персонажи</a>
-    <a href="weapons.html">Оружие</a>
-    <a href="artifacts.html">Артефакты</a>
-    <a href="regions.html" class="active">Регионы</a>
-    <a href="guides.html">Гайды</a>
-    <a href="patches.html">Патчноуты</a>
-    <a href="banners.html">Баннеры</a>
-  </nav>
-  <a class="btn-reg" href="auth.html" id="auth-btn">Войти / Регистрация</a>
-</header>
-
-<main>
-  <div class="page-hero">
-    <h1>🗺️ Регионы Тейвата</h1>
-    <p>Семь наций под властью семи Архонтов — история, стихия и особенности каждой страны</p>
-  </div>
-  <div class="cards-container">
-    <div class="regions-grid" id="regions-grid"></div>
-  </div>
-</main>
-
-<footer>
-  <div class="footer-grid">
-    <div class="footer-brand">
-      <a class="logo" href="index.html"><span class="logo-star">✦</span>&nbsp;Genshin Wiki</a>
-      <p style="margin-top:9px;">Неофициальная энциклопедия. © HoYoverse / miHoYo.</p>
-    </div>
-    <div class="footer-col"><h5>Разделы</h5>
-      <a href="characters.html">Персонажи</a><a href="weapons.html">Оружие</a><a href="artifacts.html">Артефакты</a>
-    </div>
-    <div class="footer-col"><h5>Мир</h5>
-      <a href="regions.html">Регионы</a><a href="guides.html">Гайды</a><a href="patches.html">Патчноуты</a>
-    </div>
-    <div class="footer-col"><h5>Аккаунт</h5>
-      <a href="auth.html">Войти</a><a href="auth.html">Регистрация</a><a href="banners.html">Баннеры</a>
-    </div>
-  </div>
-  <div class="footer-bottom">© 2025 Genshin Wiki — Fan Project &nbsp;|&nbsp; Genshin Impact © HoYoverse</div>
-</footer>
-
-<script src="data.js"></script>
-<script src="regions.js"></script>
-</body>
+  <head>
+    <!-- include:head -->
+    <title>Регионы — Genshin Wiki</title>
+    <meta
+      name="description"
+      content="Нации Тейвата и Нод-Край: стихия, архонт и персонажи каждого региона."
+    />
+  </head>
+  <body>
+    <!-- include:header -->
+    <main id="main">
+      <div class="page-hero">
+        <h1>🗺️ Регионы Тейвата</h1>
+        <p>Семь наций и Нод-Край — стихия, архонт и герои каждого края</p>
+      </div>
+      <div class="cards-container">
+        <div class="regions-grid" id="regions"></div>
+      </div>
+    </main>
+    <!-- include:footer -->
+    <script type="module" src="/src/pages/regions.js"></script>
+  </body>
 </html>
